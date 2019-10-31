@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/IDdIaxF9BwScH8cuztiAGabnezCsRlBAiz4hTpQgjB4!/b/dDYBAAAAAAAA&bo=EwNLARMDSwEDGTw!&rf=viewer_4">
 <meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/n3*p34BfsVHQw.ymhUAFL1YbfTGXVqSU8cKDq7WpCrY!/b/dFYBAAAAAAAA&bo=cwNyAXMDcgEDGTw!&rf=viewer_4">
 <meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/fapHYjwktfa0ihy8lQCv334RvF8F8*Z0sjdK85p83so!/b/dLgAAAAAAAAA&bo=HwPSAR8D0gEDCSw!&rf=viewer_4">
-<meta property="og:updated_time" content="2019-10-31T09:37:45.000Z">
+<meta property="og:updated_time" content="2019-10-31T13:24:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见概念、专业名词解释 (一)">
 <meta name="twitter:description" content="时域(time domain)、频域(frequency domain) 时域(time domain)是以时间为基准的电压或电流的变化的过程，可以用示波器观察到。它通常用于找出管脚到管脚的延时(delays)、偏移(skew)、过冲 (overshoot)、下冲(undershoot)以及建立时间(settling times)。 频域(frequency domain)是以频率为基准的电压或电">
@@ -495,41 +495,28 @@
 <li><h4 id="产生原因"><a href="#产生原因" class="headerlink" title="产生原因"></a>产生原因</h4><p>当较快的信号沿驱动一段较长的走线，而走线上没有有效的匹配时，往往会产生过冲。</p>
 </li>
 <li><h4 id="危害"><a href="#危害" class="headerlink" title="危害"></a>危害</h4><ul>
-<li><p>1.逻辑误判，信号高电平“1”超出接收端器件的输入最大电压值，或者信号低电平“0”低于接收端器件的输入最低电压值.</p>
+<li><p>逻辑误判，信号高电平“1”超出接收端器件的输入最大电压值，或者信号低电平“0”低于接收端器件的输入最低电压值.</p>
 </li>
-<li><p>2.过分的过冲能够引起保护二极管工作，可能导致电路元器件的失效；过分的下冲能够引<br>起假的时钟或数据错误。</p>
+<li><p>过分的过冲能够引起保护二极管工作，可能导致电路元器件的失效；过分的下冲能够引 起假的时钟或数据错误。</p>
 </li>
 </ul>
 </li>
 <li><h4 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h4><ul>
-<li><ol>
-<li>一般电路设计，多半会使上升时间最小化，同时也将失真限制在可接受范围内。而最小化过冲(过冲可视为信号失真)与减小上升时间的目标会发生冲突。</li>
-</ol>
+<li><p>一般电路设计，多半会使上升时间最小化，同时也将失真限制在可接受范围内。而最小化过冲(过冲可视为信号失真)与减小上升时间的目标会发生冲突。</p>
 </li>
-<li><ol start="2">
-<li>过冲的大小依赖于经历阻尼现象的时间。通常还伴有安定时间，即输出到达稳态的时长</li>
-</ol>
+<li><p>过冲的大小依赖于经历阻尼现象的时间。通常还伴有安定时间，即输出到达稳态的时长</p>
 </li>
 </ul>
 </li>
 <li><h4 id="消除方法"><a href="#消除方法" class="headerlink" title="消除方法"></a>消除方法</h4><ul>
-<li><ol>
 <li>匹配，或叫端接（termination）。端接可总结为两种形式：远端串联匹配消除二次反射，终端并联匹配消除一次反射。注意不是每种方式都适用于任何场合。例如50ohm并联匹配一般不适用与LVTTL/LVCMOS电平逻辑，因为电阻上消耗的功率很大。</li>
-</ol>
-</li>
-<li><ol start="2">
 <li>减少驱动端的驱动电流。</li>
-</ol>
-</li>
 </ul>
 </li>
 </ul>
 <blockquote>
-<p><strong>同一信号在不同驱动电流状态下的表现</strong></p>
+<p>####同一信号在不同驱动电流状态下的表现<br><img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/bwfqsSFYCWETsD7Aq6e9dyn4Mh1bQzl9QSj8zhhjqRk!/b/dD4BAAAAAAAA&bo=XQXTAV0F0wEDCSw!&rf=viewer_4"></p>
 </blockquote>
-<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/bwfqsSFYCWETsD7Aq6e9dyn4Mh1bQzl9QSj8zhhjqRk!/b/dD4BAAAAAAAA&bo=XQXTAV0F0wEDCSw!&rf=viewer_4">
----
-
 <h3 id="回钩"><a href="#回钩" class="headerlink" title="回钩"></a>回钩</h3><h5 id="概念：上电过程电源不是线性增加，而会出现电压降低的现象"><a href="#概念：上电过程电源不是线性增加，而会出现电压降低的现象" class="headerlink" title="概念：上电过程电源不是线性增加，而会出现电压降低的现象"></a>概念：上电过程电源不是线性增加，而会出现电压降低的现象</h5><h5 id="产生原因及消除方法"><a href="#产生原因及消除方法" class="headerlink" title="产生原因及消除方法"></a>产生原因及消除方法</h5><ul>
 <li><p>1 上电时序：线性上电时，后端的电突然起来导致回沟。<br>例如1.5V先上电，3.3V后上电。1.5V上电后，对3.3V有一定的倒灌，这样3.3V在没给电之前有一个台阶，可在DC/DC的EN管脚加上RC延时电路。</p>
 </li>
@@ -553,11 +540,15 @@
 <img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/MLPR3fMw*wfcLMLwo7ScTpdOPiMBt9wtOUzNmyb3eiM!/b/dL4AAAAAAAAA&bo=4gOyAeIDsgEDCSw!&rf=viewer_4">
 
 <ul>
-<li><h4 id="危害-1"><a href="#危害-1" class="headerlink" title="危害"></a>危害</h4></li>
+<li><h4 id="危害-1"><a href="#危害-1" class="headerlink" title="危害"></a>危害</h4><ul>
+<li>1.逻辑误判。</li>
+<li>2.由于振铃而产生的inrush current 或 inrush voltage 对</li>
+<li>3.对于COMS器件，振铃可能导致上、下MOS管同时导通时间过长，急剧增加器件功耗。</li>
 </ul>
-<p>1.逻辑误判。<br>3.由于振铃而产生的inrush current 或 inrush voltage 对<br>2.对于COMS器件，振铃可能导致上、下MOS管同时导通时间过长，急剧增加器件功耗。</p>
+</li>
+</ul>
 <ul>
-<li><h4 id="消除方法-文章节选自"><a href="#消除方法-文章节选自" class="headerlink" title="消除方法 文章节选自"></a>消除方法 <a href="http://www.doc88.com/p-2117736717149.html" target="_blank" rel="noopener">文章节选自</a></h4>振铃现象属于信号完整性问题，其解决方法称为端节匹配。进行信号完整性的分析需要用到 IBIS 模型(Input/Output Buffers Information Specification) EDA 工具，<br>IBIS 模型是一种基于 v/i 曲线的对 i/o buffer 快速准确建模的方法，是反应芯片驱动和接收电气特性的一种国际标准，它提供一种标准的文件格式来记录如驱动源输出阻抗，上升下降时间及输入负载等参数，适合做振铃和串扰等高频效应的计算方式和仿真，IBIS 模型通常由芯片厂商提供，所用 EDA 工具由 metor graphics 的电路设计分析软件 Veri Best。</li>
+<li><h4 id="消除方法-文章参考"><a href="#消除方法-文章参考" class="headerlink" title="消除方法 文章参考"></a>消除方法 <a href="http://www.doc88.com/p-2117736717149.html" target="_blank" rel="noopener">文章参考</a></h4>振铃现象属于信号完整性问题，其解决方法称为端节匹配。进行信号完整性的分析需要用到 IBIS 模型(Input/Output Buffers Information Specification) EDA 工具，IBIS 模型是一种基于 v/i 曲线的对 i/o buffer 快速准确建模的方法，是反应芯片驱动和接收电气特性的一种国际标准，它提供一种标准的文件格式来记录如驱动源输出阻抗，上升下降时间及输入负载等参数，适合做振铃和串扰等高频效应的计算方式和仿真，IBIS 模型通常由芯片厂商提供，所用 EDA 工具由 metor graphics 的电路设计分析软件 Veri Best。</li>
 </ul>
 <img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/K*sBbTxHrgUWplmBA66AbsP2vq.Xc2Q9aGh6JSpLrX0!/b/dLYAAAAAAAAA&bo=xgMPAcYDDwEDGTw!&rf=viewer_4">
 
@@ -716,7 +707,7 @@
   <p><span>本文标题:</span><a href="/2019/10/24/HardwareConceptExlplanation1/">常见概念、专业名词解释 (一)</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Arvin Yao 的个人博客">Arvin Yao</a></p>
   <p><span>发布时间:</span>2019年10月24日 - 10:30</p>
-  <p><span>最后更新:</span>2019年10月31日 - 17:37</p>
+  <p><span>最后更新:</span>2019年10月31日 - 21:24</p>
   <p><span>原始链接:</span><a href="/2019/10/24/HardwareConceptExlplanation1/" title="常见概念、专业名词解释 (一)">http://yoursite.com/2019/10/24/HardwareConceptExlplanation1/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/10/24/HardwareConceptExlplanation1/" aria-label="复制成功！"></i></span>
   </p>
@@ -969,7 +960,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#时域-time-domain-、频域-frequency-domain"><span class="nav-number">1.</span> <span class="nav-text">时域(time domain)、频域(frequency domain)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#地弹噪声和回流噪声"><span class="nav-number">2.</span> <span class="nav-text">地弹噪声和回流噪声</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#地弹"><span class="nav-number">2.1.</span> <span class="nav-text">地弹</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念"><span class="nav-number">2.1.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#影响及因素"><span class="nav-number">2.1.2.</span> <span class="nav-text">影响及因素</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回流噪声"><span class="nav-number">2.2.</span> <span class="nav-text">回流噪声</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过冲-overshoot-、下冲-undershoot"><span class="nav-number">3.</span> <span class="nav-text">过冲(overshoot)、下冲(undershoot)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#概念-1"><span class="nav-number">3.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#产生原因"><span class="nav-number">3.2.</span> <span class="nav-text">产生原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#危害"><span class="nav-number">3.3.</span> <span class="nav-text">危害</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设计原则"><span class="nav-number">3.4.</span> <span class="nav-text">设计原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消除方法"><span class="nav-number">3.5.</span> <span class="nav-text">消除方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回钩"><span class="nav-number">4.</span> <span class="nav-text">回钩</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念：上电过程电源不是线性增加，而会出现电压降低的现象"><span class="nav-number">4.0.1.</span> <span class="nav-text">概念：上电过程电源不是线性增加，而会出现电压降低的现象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#产生原因及消除方法"><span class="nav-number">4.0.2.</span> <span class="nav-text">产生原因及消除方法</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#振铃-Ring"><span class="nav-number">5.</span> <span class="nav-text">振铃(Ring)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#阻抗变化、信号反射"><span class="nav-number">5.1.</span> <span class="nav-text">阻抗变化、信号反射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#振铃产生原因"><span class="nav-number">5.2.</span> <span class="nav-text">振铃产生原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#危害-1"><span class="nav-number">5.3.</span> <span class="nav-text">危害</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消除方法-文章节选自"><span class="nav-number">5.4.</span> <span class="nav-text">消除方法 文章节选自</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。"><span class="nav-number">5.5.</span> <span class="nav-text">1.驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-负载端与传输线的阻抗匹配，可通过并行匹配的方式。"><span class="nav-number">5.6.</span> <span class="nav-text">2.负载端与传输线的阻抗匹配，可通过并行匹配的方式。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本并行接入"><span class="nav-number">5.6.1.</span> <span class="nav-text">基本并行接入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RC-并行接入"><span class="nav-number">5.6.2.</span> <span class="nav-text">RC 并行接入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Thevenin-接入"><span class="nav-number">5.6.3.</span> <span class="nav-text">Thevenin 接入</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#纹波-Ripple"><span class="nav-number">6.</span> <span class="nav-text">纹波 Ripple</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#抑制方法"><span class="nav-number">6.1.</span> <span class="nav-text">抑制方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#纹波分类"><span class="nav-number">6.2.</span> <span class="nav-text">纹波分类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#低频纹波"><span class="nav-number">6.2.1.</span> <span class="nav-text">低频纹波</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#高频纹波"><span class="nav-number">6.2.2.</span> <span class="nav-text">高频纹波</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#共模纹波噪声"><span class="nav-number">6.2.3.</span> <span class="nav-text">共模纹波噪声</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#超高频谐振噪声"><span class="nav-number">6.2.4.</span> <span class="nav-text">超高频谐振噪声</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#噪声-Noise"><span class="nav-number">7.</span> <span class="nav-text">噪声 Noise</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#来源"><span class="nav-number">7.0.1.</span> <span class="nav-text">来源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电源纹波-Power-Ripple-电源噪声（Power-Noise-的区别"><span class="nav-number">8.</span> <span class="nav-text">电源纹波(Power Ripple) 电源噪声（Power Noise)的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义"><span class="nav-number">8.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Scope-测试参数选择节选自"><span class="nav-number">8.2.</span> <span class="nav-text">Scope 测试参数选择节选自</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#时域-time-domain-、频域-frequency-domain"><span class="nav-number">1.</span> <span class="nav-text">时域(time domain)、频域(frequency domain)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#地弹噪声和回流噪声"><span class="nav-number">2.</span> <span class="nav-text">地弹噪声和回流噪声</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#地弹"><span class="nav-number">2.1.</span> <span class="nav-text">地弹</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念"><span class="nav-number">2.1.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#影响及因素"><span class="nav-number">2.1.2.</span> <span class="nav-text">影响及因素</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回流噪声"><span class="nav-number">2.2.</span> <span class="nav-text">回流噪声</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过冲-overshoot-、下冲-undershoot"><span class="nav-number">3.</span> <span class="nav-text">过冲(overshoot)、下冲(undershoot)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#概念-1"><span class="nav-number">3.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#产生原因"><span class="nav-number">3.2.</span> <span class="nav-text">产生原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#危害"><span class="nav-number">3.3.</span> <span class="nav-text">危害</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设计原则"><span class="nav-number">3.4.</span> <span class="nav-text">设计原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消除方法"><span class="nav-number">3.5.</span> <span class="nav-text">消除方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回钩"><span class="nav-number">4.</span> <span class="nav-text">回钩</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念：上电过程电源不是线性增加，而会出现电压降低的现象"><span class="nav-number">4.0.1.</span> <span class="nav-text">概念：上电过程电源不是线性增加，而会出现电压降低的现象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#产生原因及消除方法"><span class="nav-number">4.0.2.</span> <span class="nav-text">产生原因及消除方法</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#振铃-Ring"><span class="nav-number">5.</span> <span class="nav-text">振铃(Ring)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#阻抗变化、信号反射"><span class="nav-number">5.1.</span> <span class="nav-text">阻抗变化、信号反射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#振铃产生原因"><span class="nav-number">5.2.</span> <span class="nav-text">振铃产生原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#危害-1"><span class="nav-number">5.3.</span> <span class="nav-text">危害</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消除方法-文章参考"><span class="nav-number">5.4.</span> <span class="nav-text">消除方法 文章参考</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。"><span class="nav-number">5.5.</span> <span class="nav-text">1.驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-负载端与传输线的阻抗匹配，可通过并行匹配的方式。"><span class="nav-number">5.6.</span> <span class="nav-text">2.负载端与传输线的阻抗匹配，可通过并行匹配的方式。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本并行接入"><span class="nav-number">5.6.1.</span> <span class="nav-text">基本并行接入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RC-并行接入"><span class="nav-number">5.6.2.</span> <span class="nav-text">RC 并行接入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Thevenin-接入"><span class="nav-number">5.6.3.</span> <span class="nav-text">Thevenin 接入</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#纹波-Ripple"><span class="nav-number">6.</span> <span class="nav-text">纹波 Ripple</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#抑制方法"><span class="nav-number">6.1.</span> <span class="nav-text">抑制方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#纹波分类"><span class="nav-number">6.2.</span> <span class="nav-text">纹波分类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#低频纹波"><span class="nav-number">6.2.1.</span> <span class="nav-text">低频纹波</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#高频纹波"><span class="nav-number">6.2.2.</span> <span class="nav-text">高频纹波</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#共模纹波噪声"><span class="nav-number">6.2.3.</span> <span class="nav-text">共模纹波噪声</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#超高频谐振噪声"><span class="nav-number">6.2.4.</span> <span class="nav-text">超高频谐振噪声</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#噪声-Noise"><span class="nav-number">7.</span> <span class="nav-text">噪声 Noise</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#来源"><span class="nav-number">7.0.1.</span> <span class="nav-text">来源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电源纹波-Power-Ripple-电源噪声（Power-Noise-的区别"><span class="nav-number">8.</span> <span class="nav-text">电源纹波(Power Ripple) 电源噪声（Power Noise)的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义"><span class="nav-number">8.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Scope-测试参数选择节选自"><span class="nav-number">8.2.</span> <span class="nav-text">Scope 测试参数选择节选自</span></a></li></ol></li></div>
             
 
           </div>
