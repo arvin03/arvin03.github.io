@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hardware,Capacitor,">
+  <meta name="keywords" content="Hardware,Ripple Noise overshoot,">
 
 
 
@@ -93,28 +93,30 @@
 
 
 
-<meta name="description" content="一、电容器 ( Capacitor ）概念和一般特征 概念：将电能转化为电场能的元件。用电容 C 表征其在给定电位差下储存电荷能力，单位[法拉F]。 原理：电荷在电场中会受力而移动，当导体之间有了绝缘介质，则阻碍了电荷移动而使得电荷累积在导体上，造成电荷的累积储存。 结构：大部分的电容由两个金属板或是金属表面的导体，中间有不导电的绝缘介质隔开。 基本功能：充、放电，而充放电也使得电容两端没有电压突">
-<meta name="keywords" content="Hardware,Capacitor">
+<meta name="description" content="时域(time domain)、频域(frequency domain) 时域(time domain)是以时间为基准的电压或电流的变化的过程，可以用示波器观察到。它通常用于找出管脚到管脚的延时(delays)、偏移(skew)、过冲 (overshoot)、下冲(undershoot)以及建立时间(settling times)。 频域(frequency domain)是以频率为基准的电压或电">
+<meta name="keywords" content="Hardware,Ripple Noise overshoot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="电容概念、等效模型及选型">
-<meta property="og:url" content="http://yoursite.com/2019/10/02/hardwareComSelectionCap20191023/index.html">
+<meta property="og:title" content="常见概念、专业名词解释 (一)">
+<meta property="og:url" content="http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/index.html">
 <meta property="og:site_name" content="Arvin Home">
-<meta property="og:description" content="一、电容器 ( Capacitor ）概念和一般特征 概念：将电能转化为电场能的元件。用电容 C 表征其在给定电位差下储存电荷能力，单位[法拉F]。 原理：电荷在电场中会受力而移动，当导体之间有了绝缘介质，则阻碍了电荷移动而使得电荷累积在导体上，造成电荷的累积储存。 结构：大部分的电容由两个金属板或是金属表面的导体，中间有不导电的绝缘介质隔开。 基本功能：充、放电，而充放电也使得电容两端没有电压突">
+<meta property="og:description" content="时域(time domain)、频域(frequency domain) 时域(time domain)是以时间为基准的电压或电流的变化的过程，可以用示波器观察到。它通常用于找出管脚到管脚的延时(delays)、偏移(skew)、过冲 (overshoot)、下冲(undershoot)以及建立时间(settling times)。 频域(frequency domain)是以频率为基准的电压或电">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/wb5kXvScnhuckztyPHKxT60obgDkP.0.Ap4uHidSOcM!/b/dFIBAAAAAAAA&bo=AgN5AQIDeQEDFzI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/bdEdrMhUcVPaNJjVd7wgg5gZlGN9ojgz18M0RgHJP40!/b/dLYAAAAAAAAA&bo=AgN8AQIDfAEDByI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/n7DUYWanl1VRmilGeRLlPHdwLInzYuWs8NxPH6GkKj0!/b/dLgAAAAAAAAA&bo=wwOCAcMDggEDByI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/zVo9Wq5W98KB90ubHlHXJS1vOEU3*XfTYeXT4V3jChc!/b/dEgBAAAAAAAA&bo=WQPUAVkD1AEDFzI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/7AKfpp6syU9RIbY6IORa7FRJhzbMxsF9xleJMXgCHlU!/b/dDQBAAAAAAAA&bo=cwSyAXMEsgEDFzI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/sCSB.q1naTwzBOIOz2uf8TNVYDqhaXsDvK9Cy8P.isg!/b/dL8AAAAAAAAA&bo=RgRCAUYEQgEDFzI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/7aLT58JbXIePebz8BwBYi.48KKN4ks1WmILmh8O02hE!/b/dFIBAAAAAAAA&bo=2AK8AdgCvAEDFzI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/F7DigYKUDKBmwrR*AjZMRZ2ICFzyBlKvVZOIXgy0fqM!/b/dD4BAAAAAAAA&bo=uQM.AbkDPgEDByI!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/4rSD*jG.4YY5Ab1xrZ7NHVVbjmJCyoxVk0wQ7wMYT2w!/b/dDUBAAAAAAAA&bo=KAMOAigDDgIDByI!&rf=viewer_4">
-<meta property="og:updated_time" content="2019-10-23T07:37:34.000Z">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/bwfqsSFYCWETsD7Aq6e9dyn4Mh1bQzl9QSj8zhhjqRk!/b/dD4BAAAAAAAA&bo=XQXTAV0F0wEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/eKYaSoEJlt2xVcyas3dBQm2RjS42X2WuGimOv5OFeGU!/b/dL8AAAAAAAAA&bo=UQPxAVED8QEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/QIwp39I00fYgRRbgefD09JUyOfdXIe94kUU0B0yikDc!/b/dFQBAAAAAAAA&bo=GgSCARoEggEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/eQDQjRt2dAmMH.zSHfDOq6Ib.nlgj8wCbRIPBsg6UCA!/b/dFMBAAAAAAAA&bo=OAOtATgDrQEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/MLPR3fMw*wfcLMLwo7ScTpdOPiMBt9wtOUzNmyb3eiM!/b/dL4AAAAAAAAA&bo=4gOyAeIDsgEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/K*sBbTxHrgUWplmBA66AbsP2vq.Xc2Q9aGh6JSpLrX0!/b/dLYAAAAAAAAA&bo=xgMPAcYDDwEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/dRiSG2vq3aFKXCRUAkr5mKVcbDwoSsnYHRKdy3h0mlI!/b/dEEBAAAAAAAA&bo=uAKPALgCjwADGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/FJYDYg9xmAjxQWBq96Ul7LQ5e*0NBy46tZkF2gN1wJQ!/b/dDUBAAAAAAAA&bo=.wNkAfsDZAEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/IDdIaxF9BwScH8cuztiAGabnezCsRlBAiz4hTpQgjB4!/b/dDYBAAAAAAAA&bo=EwNLARMDSwEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/n3*p34BfsVHQw.ymhUAFL1YbfTGXVqSU8cKDq7WpCrY!/b/dFYBAAAAAAAA&bo=cwNyAXMDcgEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/fapHYjwktfa0ihy8lQCv334RvF8F8*Z0sjdK85p83so!/b/dLgAAAAAAAAA&bo=HwPSAR8D0gEDCSw!&rf=viewer_4">
+<meta property="og:updated_time" content="2019-10-31T09:17:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="电容概念、等效模型及选型">
-<meta name="twitter:description" content="一、电容器 ( Capacitor ）概念和一般特征 概念：将电能转化为电场能的元件。用电容 C 表征其在给定电位差下储存电荷能力，单位[法拉F]。 原理：电荷在电场中会受力而移动，当导体之间有了绝缘介质，则阻碍了电荷移动而使得电荷累积在导体上，造成电荷的累积储存。 结构：大部分的电容由两个金属板或是金属表面的导体，中间有不导电的绝缘介质隔开。 基本功能：充、放电，而充放电也使得电容两端没有电压突">
-<meta name="twitter:image" content="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/wb5kXvScnhuckztyPHKxT60obgDkP.0.Ap4uHidSOcM!/b/dFIBAAAAAAAA&bo=AgN5AQIDeQEDFzI!&rf=viewer_4">
+<meta name="twitter:title" content="常见概念、专业名词解释 (一)">
+<meta name="twitter:description" content="时域(time domain)、频域(frequency domain) 时域(time domain)是以时间为基准的电压或电流的变化的过程，可以用示波器观察到。它通常用于找出管脚到管脚的延时(delays)、偏移(skew)、过冲 (overshoot)、下冲(undershoot)以及建立时间(settling times)。 频域(frequency domain)是以频率为基准的电压或电">
+<meta name="twitter:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/bwfqsSFYCWETsD7Aq6e9dyn4Mh1bQzl9QSj8zhhjqRk!/b/dD4BAAAAAAAA&bo=XQXTAV0F0wEDCSw!&rf=viewer_4">
 
 
 
@@ -144,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/02/hardwareComSelectionCap20191023/">
+  <link rel="canonical" href="http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/">
 
 
 
 
 
-  <title>电容概念、等效模型及选型 | Arvin Home</title>
+  <title>常见概念、专业名词解释 (一) | Arvin Home</title>
   
 
 
@@ -319,7 +321,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/02/hardwareComSelectionCap20191023/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Arvin Yao">
@@ -336,7 +338,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">电容概念、等效模型及选型</h1>
+          <h1 class="post-title" itemprop="name headline">常见概念、专业名词解释 (一)</h1>
         
 
         <div class="post-meta">
@@ -348,8 +350,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-02T23:26:59+08:00">
-                2019-10-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-24T10:30:10+08:00">
+                2019-10-24
               </time>
             
 
@@ -382,19 +384,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hardware/元器件概念、模型及选型/" itemprop="url" rel="index">
-                    <span itemprop="name">元器件概念、模型及选型</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hardware/元器件概念、模型及选型/电容-Capacitor/" itemprop="url" rel="index">
-                    <span itemprop="name">电容-Capacitor</span>
+                  <a href="/categories/Hardware/常见概念、专业名词解释/" itemprop="url" rel="index">
+                    <span itemprop="name">常见概念、专业名词解释</span>
                   </a>
                 </span>
 
@@ -411,8 +402,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/10/02/hardwareComSelectionCap20191023/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/02/hardwareComSelectionCap20191023/" itemprop="commentCount"></span>
+                <a href="/2019/10/24/HardwareConceptExlplanation_1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/24/HardwareConceptExlplanation_1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -439,7 +430,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4.7k
+                  4.1k
                 </span>
               
 
@@ -455,7 +446,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  16
+                  14
                 </span>
               
             </div>
@@ -476,213 +467,197 @@
       
 
       
-        <h3 id="一、电容器-Capacitor-）概念和一般特征"><a href="#一、电容器-Capacitor-）概念和一般特征" class="headerlink" title="一、电容器 ( Capacitor ）概念和一般特征"></a>一、电容器 ( Capacitor ）概念和一般特征</h3><ul>
-<li><strong>概念</strong>：将电能转化为电场能的元件。用电容 C 表征其在给定电位差下储存电荷能力，单位[法拉F]。</li>
-<li><strong>原理</strong>：电荷在电场中会受力而移动，当导体之间有了绝缘介质，则阻碍了电荷移动而使得电荷累积在导体上，造成电荷的累积储存。</li>
-<li><strong>结构</strong>：大部分的电容由两个金属板或是金属表面的导体，中间有不导电的绝缘介质隔开。</li>
-<li><strong>基本功能</strong>：充、放电，而充放电也使得电容两端没有电压突变。</li>
-<li><strong>基本特性</strong>：通交流，隔直流；通高频，阻低频。</li>
+        <h3 id="时域-time-domain-、频域-frequency-domain"><a href="#时域-time-domain-、频域-frequency-domain" class="headerlink" title="时域(time domain)、频域(frequency domain)"></a>时域(time domain)、频域(frequency domain)</h3><ul>
+<li>时域(time domain)是以时间为基准的电压或电流的变化的过程，可以用示波器观察到。它通常用于找出管脚到管脚的延时(delays)、偏移(skew)、过冲 (overshoot)、下冲(undershoot)以及建立时间(settling times)。</li>
+<li>频域(frequency domain)是以频率为基准的电压或电流的变化的过程，可以用频谱分析仪观察到。它通常用于波形与FCC和其它EMI控制限制之间的比较。</li>
 </ul>
-<img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/wb5kXvScnhuckztyPHKxT60obgDkP.0.Ap4uHidSOcM!/b/dFIBAAAAAAAA&bo=AgN5AQIDeQEDFzI!&rf=viewer_4">
-电解电容结构示意 (图片来源于 百度图片)
-
-
-<h3 id="二、电容的分类与封装"><a href="#二、电容的分类与封装" class="headerlink" title="二、电容的分类与封装"></a>二、电容的分类与封装</h3><h4 id="常见分类方法"><a href="#常见分类方法" class="headerlink" title="常见分类方法"></a>常见分类方法</h4><ul>
-<li>按容值分：固定电容、可变电容、微调电容</li>
-<li>按极性分：极性电容，无极性电容</li>
-<li>按制造工艺或介质材料分：<ul>
-<li>1 薄膜(Film Capacitor)</li>
-<li>2 陶瓷(Ceramic Capacitor)</li>
-<li>3 电解电容(Electrolytic Capacitor)</li>
+<hr>
+<h3 id="地弹噪声和回流噪声"><a href="#地弹噪声和回流噪声" class="headerlink" title="地弹噪声和回流噪声"></a>地弹噪声和回流噪声</h3><h4 id="地弹"><a href="#地弹" class="headerlink" title="地弹"></a>地弹</h4><ul>
+<li><h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5>电路中有大的电流涌动时引起的地平面反弹噪声。如大量芯片的输出同时开启时，将有一个较大的瞬态电流在芯片与板的电源平面流过，芯片封装与 电源平面的电感和电阻会引发电源噪声，这样会在真正的地平面(0V)上产生电压的波动和变化。</li>
+<li><h5 id="影响及因素"><a href="#影响及因素" class="headerlink" title="影响及因素"></a>影响及因素</h5>地弹会影响其它元器件的动作。负载电容的增大、负载电阻的减小、地电感的增大、同时开关器件数目的增加均会导致地弹的增大。</li>
 </ul>
+<h4 id="回流噪声"><a href="#回流噪声" class="headerlink" title="回流噪声"></a>回流噪声</h4><p>由于地电平面(包括电源和地)分割，例如地层被分割为数字地、模拟地、屏蔽地等，当数字信号走到模拟地线区域时，就会产生地平面回流噪声。</p>
+<hr>
+<h3 id="过冲-overshoot-、下冲-undershoot"><a href="#过冲-overshoot-、下冲-undershoot" class="headerlink" title="过冲(overshoot)、下冲(undershoot)"></a>过冲(overshoot)、下冲(undershoot)</h3><ul>
+<li><h4 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h4><p>过冲：主要表现为一个尖端脉冲，过冲发生于瞬时值超过最终值。对于raise edge 是指最高电压，而对于 fall edge 是指最低电压。<br>下冲：瞬时值低于最终值。</p>
 </li>
-<li>按用途分：旁路、去耦、滤波、储能、耦合</li>
-<li>按安装方式：插件、贴片</li>
+<li><h4 id="产生原因"><a href="#产生原因" class="headerlink" title="产生原因"></a>产生原因</h4><p>当较快的信号沿驱动一段较长的走线，而走线上没有有效的匹配时，往往会产生过冲。</p>
+</li>
+<li><h4 id="危害"><a href="#危害" class="headerlink" title="危害"></a>危害</h4><p>1.逻辑误判，信号高电平“1”超出接收端器件的输入最大电压值，或者信号低电平“0”低于     接收端器件的输入最低电压值.</p>
+<p>2.过分的过冲能够引起保护二极管工作，可能导致电路元器件的失效；过分的下冲能够引<br>  起假的时钟或数据错误。</p>
+</li>
+<li><h4 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h4></li>
 </ul>
-<h4 id="容量标示"><a href="#容量标示" class="headerlink" title="容量标示"></a>容量标示</h4><ul>
-<li><p>1.直标法<br>用数字和单位符号直接标出。如6800uF，有些电容用“R”表示小数点，如R56表示0.56uF。</p>
-<img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/bdEdrMhUcVPaNJjVd7wgg5gZlGN9ojgz18M0RgHJP40!/b/dLYAAAAAAAAA&bo=AgN8AQIDfAEDByI!&rf=viewer_4">
-[图片来源 百度图片]
-</li>
-<li><p>2.文字符号法<br>用数字和文字符号有规律的组合来表示容量。如p10表示0.1pF、1p0表示1pF、6P8表示6.8pF、2u2表示2.2uF。不同厂家可能会有自己的命名原则。</p>
-<img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/n7DUYWanl1VRmilGeRLlPHdwLInzYuWs8NxPH6GkKj0!/b/dLgAAAAAAAAA&bo=wwOCAcMDggEDByI!&rf=viewer_4">
-[图片来源 Kemet datasheet]
-</li>
-<li><p>3.色标法<br>用色环或色点表示电容器的主要参数。电容器的色标法与电阻相同。</p>
-<img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/zVo9Wq5W98KB90ubHlHXJS1vOEU3*XfTYeXT4V3jChc!/b/dEgBAAAAAAAA&bo=WQPUAVkD1AEDFzI!&rf=viewer_4">
-[图片来源 百度图片]
-
-
-
-</li>
-</ul>
-<h4 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h4><p>和电阻的封装类似<br><img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/7AKfpp6syU9RIbY6IORa7FRJhzbMxsF9xleJMXgCHlU!/b/dDQBAAAAAAAA&bo=cwSyAXMEsgEDFzI!&rf=viewer_4"></p>
-<h3 id="三、主要性能指标"><a href="#三、主要性能指标" class="headerlink" title="三、主要性能指标"></a>三、主要性能指标</h3><ul>
-<li><p><strong>标称容值与容差</strong></p>
+<p>1.一般电路设计，多半会使上升时间最小化，同时也将失真限制在可接受范围内。而最小化过冲(过冲可视为信号失真)与减小上升时间的目标会发生冲突。</p>
+<p> 2.过冲的大小依赖于经历阻尼现象的时间。通常还伴有安定时间，即输出到达稳态的时长</p>
 <ul>
-<li>电容上标示的电容量。</li>
-<li>容差：表示实际电容与标称容值的允许误差范围。精度等级与允许误差有对应关系</li>
+<li><h4 id="消除方法"><a href="#消除方法" class="headerlink" title="消除方法"></a>消除方法</h4></li>
 </ul>
-</li>
-<li><p><strong>额定电压</strong>：</p>
-<ul>
-<li>在最低环境温度和额定环境温度下可连续加在电容器的最高直流电压。</li>
-<li>如果工作电压超过电容器的耐压，电容器将被击穿，造成损坏。实际应用中，随着温度的升高，耐压值将会变低。</li>
-<li>一般情况下，无极性电容的额定电压较高，极性电容的额定电压较低。选型的时候必须满足降额要求：铝电解电容降额70%，钽电容降额50%，陶瓷电容降额60%。</li>
-</ul>
-</li>
-<li><p><strong>绝缘电阻</strong></p>
-<ul>
-<li>直流电压加在电容上，产生漏电电流，两者之比称为绝缘电阻。</li>
-<li>当电容较小时，其值主要取决于电容的表面状态；容量较大时，其值主要取决于介质。通常情况，绝缘电阻越大越好。</li>
-</ul>
-</li>
-<li><p><strong>漏电流</strong><br>在特定温度和额定电压下存在的直流漏导电流。电容量越大，电压越高，漏电流越大。</p>
-</li>
-<li><p><strong>极限温度</strong><br>确定的能连续工作的额定环境温度范围。 根据类别不同分为85°、125°、150°、175°、200°。</p>
-</li>
-<li><p><strong>损耗</strong></p>
-<ul>
-<li>在电场作用下，单位时间内因发热所消耗的能量。在规定频率的正弦电压下，电容器的损耗功率除以电容器的无功功率为损耗角正切</li>
-<li>主要由介质损耗、电导损耗和电容所有金属部分的电阻所引起的。对于高频信号，这个参数尤为重要。</li>
-</ul>
-</li>
-<li><p><strong>频率特性</strong></p>
-<ul>
-<li>频率上升，电容量呈下降趋势。当电容工作在谐振频率以下时，表现为容性；当超过其谐振频率时，表现为感性，此时就不是一个电容而是一个电感了。所以要避免电容工作于谐振频率以上。</li>
-</ul>
-</li>
-<li><p><strong>Q因子</strong></p>
-<ul>
-<li>电容器的品质因子（或Q因子）是特定频率下其容抗和电阻的比例，用来量测其效率。Q值越大的电容器，其特性越接近理想电容器。</li>
-</ul>
-</li>
-</ul>
-<img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/sCSB.q1naTwzBOIOz2uf8TNVYDqhaXsDvK9Cy8P.isg!/b/dL8AAAAAAAAA&bo=RgRCAUYEQgEDFzI!&rf=viewer_4">
-KEMET 电容 Feature (图片来源) 【kemet datasheet】
-
-
-
-
-<h3 id="四、模型及特性曲线"><a href="#四、模型及特性曲线" class="headerlink" title="四、模型及特性曲线"></a>四、模型及特性曲线</h3><h4 id="理想模型"><a href="#理想模型" class="headerlink" title="理想模型"></a>理想模型</h4><p>对于理想电容，其容值不会随电压或电流而改变。<br><img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/7aLT58JbXIePebz8BwBYi.48KKN4ks1WmILmh8O02hE!/b/dFIBAAAAAAAA&bo=2AK8AdgCvAEDFzI!&rf=viewer_4" height="320px" width="100%"><br>[图片来源 百度图片]</p>
-<h4 id="实际电容的等效模型"><a href="#实际电容的等效模型" class="headerlink" title="实际电容的等效模型"></a>实际电容的等效模型</h4><p>电容由于受封装和材料的影响，实际电容还有寄生的电感和电阻。<br><img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/F7DigYKUDKBmwrR*AjZMRZ2ICFzyBlKvVZOIXgy0fqM!/b/dD4BAAAAAAAA&bo=uQM.AbkDPgEDByI!&rf=viewer_4"><br>pic 电容实际等效模型 【 ～高频～交流～ 】 [图片来源 百度图片](</p>
-<ul>
-<li><p>ESR：由电阻器的引脚电阻与电容器两个极板的等效电阻相串联构成的，其大小取决于电容的工作温度、工作频率及电容本身的导线电阻。ESR主要影响电容的损耗和电容阻值。<strong>较大的ESR有三个不利</strong>：</p>
-<ul>
-<li>1.产生较大的损耗。</li>
-<li>2.对于交流耦合，如果ESR较大，相当于交流电路串联一个电阻产生衰减。</li>
-<li>3.并联在电源和地之间的电容的作用是为噪声提供一个低阻抗回路，较大的ESR无法起作用。因此在重要的电源滤波电路上往往需要并联多个电容，最大程度降低ESR。</li>
-</ul>
-</li>
-<li><p>ESL：由电容器的引脚电感与电容两个极板的等效电感串联构成。在低频信号输入时，ESL的作用很小。在高频信号输入时，ESL的作用很大。ESL的大小主要取决于封装尺寸。</p>
-</li>
-<li><p>泄露电阻Bleak:就是通常所说的电容泄露电阻。</p>
-</li>
-</ul>
-<img src="http://m.qpic.cn/psb?/V14L5GMC0k1A9i/4rSD*jG.4YY5Ab1xrZ7NHVVbjmJCyoxVk0wQ7wMYT2w!/b/dDUBAAAAAAAA&bo=KAMOAigDDgIDByI!&rf=viewer_4">
-pic 电容阻抗-频率特性曲线
-[图片来源 百度图片]
-
-
-<h3 id="五、常见电容基本特性"><a href="#五、常见电容基本特性" class="headerlink" title="五、常见电容基本特性"></a>五、常见电容基本特性</h3><h4 id="薄膜电容-Film-Capacitor"><a href="#薄膜电容-Film-Capacitor" class="headerlink" title="薄膜电容  Film Capacitor"></a>薄膜电容  <a href="http://www.capacitorguide.com/film-capacitor/" target="_blank" rel="noopener">Film Capacitor</a></h4><ul>
-<li>薄膜电容又称塑料薄膜电容。以金属箔当电极，将其和聚乙酯，聚丙烯，聚苯乙烯或聚碳酸酯等塑料薄膜，从两端重叠后，卷绕成圆筒状的构造之电容器。而依塑料薄膜的种类又被分别称为聚乙酯电容（又称Mylar电容），聚丙烯电容（又称PP电容），聚苯乙烯电容（又称PS电容）和聚碳酸电容。</li>
-<li>特点：容量范围为3pF-0.1μF ，直流工作电压为63-500V，适用于高频、低频，漏电电阻 大于10kΩ。<ul>
-<li>无极性</li>
-<li>绝缘阻抗很高</li>
-<li>频率特性优异(频率响应宽广)</li>
-<li>介质损失很小。</li>
-</ul>
-</li>
-<li>应用：大量使用在模拟电路上。尤其是在信号交连的部分，必须使用频率特性良好，介质损失极低的电容器，方能确保信号在传送时，不致有太大的失真情形发生。<ul>
-<li>涤纶薄膜电容，介电常数较高，体积小，容量大，稳定性比较好，适宜做旁路电容。</li>
-<li>聚苯乙烯薄膜电容，介质损耗小，绝缘电阻高，但是温度系数大，可用于高频电路。</li>
-</ul>
-</li>
-</ul>
-<h4 id="铝电解电容-Electrolytic-Capacitor"><a href="#铝电解电容-Electrolytic-Capacitor" class="headerlink" title="铝电解电容  Electrolytic Capacitor"></a>铝电解电容  <a href="http://www.capacitorguide.com/electrolytic-capacitor/" target="_blank" rel="noopener">Electrolytic Capacitor</a></h4><ul>
-<li><p>铝电解电容是有极性的电解电容，其阳极电极是由有蚀刻表面的铝箔制成，铝箔透过阳极处理，外围包覆着一层很薄的氧化铝绝缘层，是电容器的介电质。在氧化铝外面包覆着非固态的电解质，是电容器的阴极。另外有一层铝箔，称为“阴极铝箔”。阴极铝箔会和电解质接触，连接到电容器的负极端子。</p>
-</li>
-<li><p>铝电解电容器可以依其电解质的种类分为三种：</p>
-<ul>
-<li>非固态（液态、湿式）电解质的铝电解电容器<ul>
-<li>非固态电解质的铝电解电容是最便宜的电容器，其大小、电容量及电压等级的范围也最广。电容量最小为0.1 µF，最大到2.7 F，电压从4V到630V</li>
-</ul>
-</li>
-<li>液态电解质在介电的氧化层自我恢复时可以提供所需的氧气。不过电解质会蒸发，而干燥的过程会随温度而变化，因此会造成其电气参数的飘移，限制电容器的使用寿命。</li>
-<li>固态铝电容器，其电解质是固态二氧化锰。</li>
-<li>聚合物电容器，其电解质是固态聚合物。</li>
-</ul>
-</li>
-<li><h4 id="铝电解电容-湿式"><a href="#铝电解电容-湿式" class="headerlink" title="铝电解电容(湿式)"></a>铝电解电容(湿式)</h4><p>铝电解电容(湿式)，高度较高，ESR较高，不适合放置于IC附近做电源去耦，通常用于电源电路的输入输出电容。</p>
-<ul>
-<li><strong>容值</strong><br>容差一般为±20%。计算最大容值和最小容值时，各项参数要满足设计要求。</li>
-<li><strong>额定电压</strong><br>通常只适用于直流场合，设计工作电压至少要低于额定电压的80%。对于有浪涌防护的电路，其额定浪涌电压要高于防护器件(通常是TVS)的残压。</li>
-<li><strong>耗散因数</strong><br>设计DC-DC电路时，输出电容的ESR影响输出电压纹波，因此需要知道铝电解电容的ESR，但大多数铝电解电容的规格书只给出了耗散因数tanδ。可以根据以下公式来计算ESR：ESR = tanδ/(2πfC)<br>铝电解电容的ESR非常大，这会导致输出电压纹波很大。因此使用铝电解电容时，需配合使用片状陶瓷电容，靠近DCDC芯片放置。随着开关频率和温度的升高，ESR会下降。</li>
-<li><strong>额定纹波电流</strong><br>电容的纹波电流，要满足DCDC设计的输入和输出电容的RMS电流的需求。铝电解电容的额定纹波电流需要根据开关频率来修正。</li>
-<li><strong>寿命</strong><br>寿命和工作温度直接相关的，datasheet通常给出产品最高温度时的寿命，一般来说，工作温度每下降10℃，寿命乘以2。如果产品的设计使用寿命为3年，也就是26280小时。则10*log2(26280/2000)=37.3℃，那么设计工作温度不能超过65℃。</li>
-</ul>
-</li>
-<li><h4 id="聚合物铝电解电容"><a href="#聚合物铝电解电容" class="headerlink" title="聚合物铝电解电容"></a>聚合物铝电解电容</h4><ul>
-<li><strong>结构：</strong>聚合物电容是采用高电导率的聚合物材料作为阴极的片式叠层铝电解电容器，具有超越现有液体片式铝电解电容器和固体片式钽电解电容器的卓越电性能。聚合物电容在额定电压范围内，无需降压使用。</li>
-<li><strong>特性：</strong>极低的等效串联电阻(ESR)，降低纹波电压能力强，允许通过更大纹波电流。聚合物片式叠层铝电解电容器在高频下，阻抗曲线呈现近似理想电容器特性。在频率变化情况下，电容量非常稳定。</li>
-<li><strong>主要应用：</strong>主板的旁路去耦/储能滤波电容、开关电源、DC/DC变换器、高频噪声抑制电路及便携式电子设备等。</li>
-<li><strong>应用举例</strong><ul>
-<li>音频电路，通常需要用到耦合、去耦电容，由于音频的频率很低，所以需要用大电容，此时聚合物铝电解电容也很合适。</li>
-<li>大功耗器件的去耦电容。如 intel 的cpu ，功耗为80多瓦，核电流几十到上百安，同时主频很高，高频成分多。对去耦电容要求如下<br>1。电容值要大，满足大电流要求；<br>2。额定RMS电流要大，满足大电流要求；<br>3。ESR小，满足高频去耦要求；<br>4。容值稳定性好<br>5。表面帖装，高度不能太高，因为通常放置在CPU背面的BOTTOM层，以达到最好的去耦效果。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="钽电容"><a href="#钽电容" class="headerlink" title="钽电容"></a>钽电容</h4><ul>
-<li><p>钽属于稀有金属，因此钽电容价格较高。由于内部没有电解液，很适合在高温下工作，保证了其长寿命和可靠性的优势。综性能要也比铝电解电容要好，ESR更小，损耗更小，去耦效果更好，漏电流小。体积小而又能达到较大电容量</p>
-</li>
-<li><p><strong>极性</strong><br>贴片钽电容有标记的一端是正极，另外一端是负极，引线钽长腿的正极。</p>
-</li>
-<li><p><strong>额定电压</strong><br>实际工作电压需降额设计。正常要低于额定电压的50%；高温环境或负载阻抗较低时，工作电压要低于额定电压的30%。具体降额要求应严格按照规格书要求。此外，还需要注意钽电容的承受反向电压的情况，交流成分过大，可能会导致钽电容承受反向电压，导致钽电容失效。固态钽电容的主要失效模式是短路失效，会直接导致电路无法工作，甚至起火等风险。因此，需要额外注意可靠性设计，降低失效率。</p>
-</li>
-<li><p><strong>额定纹波电流</strong><br>纹波电流流过钽电容，由于ESR存在会导致钽电容温升，加上环境温度，使用时不能超过钽电容的额定温度以及相关降额设计。</p>
-</li>
-</ul>
-<h4 id="陶瓷电容-Ceramic-Capacitor"><a href="#陶瓷电容-Ceramic-Capacitor" class="headerlink" title="陶瓷电容(Ceramic Capacitor)"></a>陶瓷电容(Ceramic Capacitor)</h4><p>以陶瓷为介电质的电容器。其结构是由二层或更多层交替出现的陶瓷层和金属层所组成，金属层连结到电容器的电极。陶瓷材料的成分决定了陶瓷电容器的电气特性及其应用范围</p>
-<ul>
-<li><p>常见陶瓷电容分类</p>
-<ul>
-<li>Class 1 陶瓷电容：低K（介电系数),有温度补偿，电容值准确。在不同的电压、温度下的稳定性最佳，且其损失最少。但是其容积效率也最低。典型Class 1电容的温度系数为30 ppm/°C，而且对温度的线性度很高，Class 1 陶瓷电容的散逸因数约为0.15%，因此适用在高品质因子的滤波器中。一般Class 1电容的电容误差约为5%至10%，也可以找到高准确度，误差只有1%的电容器。最高准确度的Class 1电容其标示为C0G或NP0。Class 1 陶瓷电容主要用在滤波器中，此领域除了使用Class 1 陶瓷电容器外，低频应用还可以使用薄膜电容</li>
-<li>Class 2 陶瓷电容：中K（介电系数),其容积效率较Class 1电容要好，但其电容准确度及稳定性较差。一般的Class 2电容在−55°C至85°C的温度范围内，电容量误差值会在15%以内。Class 2电容的散逸因数约为2.5%。</li>
-<li>Class 3 陶瓷电容：高K（介电系数),其容积效率更好，但其电容准确度及稳定性也更差。一般的Class 3电容在10°C至55°C的温度范围内，电容量会有-22%至+56%的变化。Class 3电容的散逸因数约为4%。一般Class 3电容会用在去耦电容及其他电源供应器的应用中。Class 3电容器一般用在电源供应器中，此应用由于体积上的限制，除了Class 3电容器外很难找到其他适用的电容器。</li>
-</ul>
-</li>
-<li><p>颤噪效应<br>陶瓷电容会有轻微的颤噪效应，也就是将机械振动转换为电气噪声的情形。</p>
-</li>
-</ul>
-<h3 id="六、应用及选型"><a href="#六、应用及选型" class="headerlink" title="六、应用及选型"></a>六、应用及选型</h3><ul>
-<li><p>1.储能<br>储存能量就可以当电源，例如超级电容；<br>存储数据，DRAM 就是利用集成的电容阵列存储数据，电容充满电就是1，放完电就是0。</p>
-</li>
-<li><p>2 延时<br>电容充放电需要时间，可以用做定时器；还可做延时电路，最常见的就是上电延时复位；一些定时芯片如NE556，可以产生三角波。<br>谐振源：与电感一起组成LC谐振电路，产生固定频率的信号。</p>
-</li>
-<li><p>3.电源去耦<br>电源去耦应该是电容最广泛的应用，各种CPU、SOC、ASIC的周围、背面放置了大量的电容，目的就是保持供电电压的稳定。特别是在高速电路中，电源的负载是动态的，当驱使器件的工作电压增加或者减少时，电容能够通过积累或者释放电荷以吸收这种变化，从而保持器件工作电压的稳定。</p>
-</li>
-<li><p>4.耦合隔直<br>有些情况下，只希望传递交流信号，不希望传递直流信号，这时候可以使用串联电容来耦合信号。例如多级放大器，为了防止直流偏置相互影响，静态工作点计算复杂，通常级间使用电容耦合，这样每一级静态工作点可以独立分析。例如PCIE、SATA这样的高速串行信号，通常也使用电容进行交流耦合。</p>
-</li>
-<li><p>5.旁路滤波<br>旁路，顾名思义就是将不需要的交流信号导入大地。滤波其实也是一个意思。在微波射频电路中，各种滤波器的设计都需要使用电容。此外，像EMC设计，对于接口处的LED灯，都会在信号线上加一颗滤波电容，这样可以提高ESD测试时的可靠性。</p>
-</li>
-<li><p>6 高频噪声的泄放通路。<br>高速电路状态的改变将在电路上产生大量的噪声干扰，从频谱上看，这些干扰在相当大程度上处于有效信号的2次、3次等倍频频率，根据Z=1/（jwC），当频率较高时，电容表现为低阻抗，作为泄放通路。</p>
-</li>
-</ul>
+<p>1.匹配，或叫端接（termination）。端接可总结为两种形式：远端串联匹配消除二次反射，终端并联匹配消除一次反射。注意不是每种方式都适用于任何场合。例如50ohm并联匹配一般不适用与LVTTL/LVCMOS电平逻辑，因为电阻上消耗的功率很大。</p>
+<p> 2.减少驱动端的驱动电流。</p>
 <blockquote>
-<h4 id="General-Principle"><a href="#General-Principle" class="headerlink" title="General Principle"></a>General Principle</h4></blockquote>
-<ul>
-<li>高速电路中，应选取ESL值小的贴片电容，供电线上至少分布两个电容，一个是虑除外界对CPU引脚的干扰（放在靠近COU），一个是消除CPU引脚对外界的影响（放在远离CPU位置）</li>
-<li>高速设计中，噪声等干扰往往不是处在一个频率点上，而是占据一段带宽。利用多种不同的电容构造一个比较宽的低阻抗频带，尽可能覆盖噪声频带。</li>
-<li>对低频去耦时，我们可选用大的电容（如电解电容，10uF），此电容的谐振频率较低。</li>
-<li>对高频去耦时，则选用谐振频率高的小电容（如0.1uF）。</li>
-<li>如果要求去耦的频段较大，我们可以用容值相差100倍的一个小电容和一个大电容并联：</li>
-<li>当信号频率小于50MHz时，我们使用传统的去耦电容（0.01uF或0.1uF）是有效的；</li>
-<li>当频率在50~500MHz之间时，此时我们选取的原则是：如对窄频带进行去耦，首先尽量选择大小相等的几个电容，这样谐振时，阻抗只有单个电容的1/N，不能大小不同，会产生谐振。</li>
+<p><strong>同一信号在不同驱动电流状态下的表现</strong></p>
+</blockquote>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/bwfqsSFYCWETsD7Aq6e9dyn4Mh1bQzl9QSj8zhhjqRk!/b/dD4BAAAAAAAA&bo=XQXTAV0F0wEDCSw!&rf=viewer_4">
+---
+
+<h3 id="回钩"><a href="#回钩" class="headerlink" title="回钩"></a>回钩</h3><h5 id="概念：上电过程电源不是线性增加，而会出现电压降低的现象"><a href="#概念：上电过程电源不是线性增加，而会出现电压降低的现象" class="headerlink" title="概念：上电过程电源不是线性增加，而会出现电压降低的现象"></a>概念：上电过程电源不是线性增加，而会出现电压降低的现象</h5><h5 id="产生原因及消除方法"><a href="#产生原因及消除方法" class="headerlink" title="产生原因及消除方法"></a>产生原因及消除方法</h5><ul>
+<li><p>1 上电时序：线性上电时，后端的电突然起来导致回沟。<br>例如1.5V先上电，3.3V后上电。1.5V上电后，对3.3V有一定的倒灌，这样3.3V在没给电之前有一个台阶，可在DC/DC的EN管脚加上RC延时电路。</p>
+</li>
+<li><p>2 电源负载突然增加或者变动。芯片启动过程中，负载启动大量电流消耗造成。可在输出端加电容，用于储能蓄电。</p>
+</li>
 </ul>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><h6 id="Vender-Website"><a href="#Vender-Website" class="headerlink" title="Vender Website"></a>Vender Website</h6><p><a href="https://www.murata.com/" target="_blank" rel="noopener">Murata</a><br><a href="https://www.kyocera.com.cn/" target="_blank" rel="noopener">京瓷集团 | (KYOCERA )</a><br><a href="http://www.avx.com/products/niobium/smd-nbo-oxicap/oxicap-noj-series/" target="_blank" rel="noopener">AVX 官网</a></p>
-<p><a href="http://www.capacitorguide.com/" target="_blank" rel="noopener">Capacitor Guide</a><br><a href="https://wikipedia.tw.wjbk.site/wiki/%E7%94%B5%E5%AE%B9%E5%99%A8" target="_blank" rel="noopener">Capacitor wikipedia</a><br><a href="https://baike.baidu.com/item/%E7%94%B5%E5%AE%B9%E5%99%A8/1087619?fromtitle=%E7%94%B5%E5%AE%B9&fromid=12031635&fr=aladdin" target="_blank" rel="noopener">电容器 百度百科</a><br><a href="http://www.avx.com/docs/techinfo/General/dielectr.pdf" target="_blank" rel="noopener">AVX Dielectric Comparison Chart</a><br><a href="http://catalogs.avx.com/HighPowerCapacitors.pdf" target="_blank" rel="noopener">High Power Film Capacitors</a><br><a href="http://www.vishay.com/docs/40031/apprippl.pdf" target="_blank" rel="noopener">AC Ripple Current Calculations</a><br><a href="http://www.avx.com/docs/techinfo/CeramicCapacitors/mlc-tant.pdf" target="_blank" rel="noopener">COMPARISON OF MULTILAYER CERAMIC AND TANTALUM CAPACITORS</a></p>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/eKYaSoEJlt2xVcyas3dBQm2RjS42X2WuGimOv5OFeGU!/b/dL8AAAAAAAAA&bo=UQPxAVED8QEDCSw!&rf=viewer_4">
+
+<hr>
+<h3 id="振铃-Ring"><a href="#振铃-Ring" class="headerlink" title="振铃(Ring)"></a>振铃(Ring)</h3><ul>
+<li><h4 id="阻抗变化、信号反射"><a href="#阻抗变化、信号反射" class="headerlink" title="阻抗变化、信号反射"></a>阻抗变化、信号反射</h4><p> 信号沿传输线向前传输时，每时每刻都会感受到一个瞬态阻抗，如果在传输的过程中信号感受到的阻抗是恒定的，那么就会正常向前传播，只要阻抗发生变化，信号都会发生反射。这些因素可能包括过长的走线，末端匹配的传输线，过量的电容或电感及阻抗失配。</p>
+</li>
+<li><h4 id="振铃产生原因"><a href="#振铃产生原因" class="headerlink" title="振铃产生原因"></a>振铃产生原因</h4><p>如果信号传输过程中感受到阻抗的变化，就会发生信号的反射。这个信号可能是驱动端发出的信号，也可能是远端反射回来的反射信号。根据反射系数的公式，当信号感受到阻抗变大，就会发生正反射，反射的正电压会使信号产生过冲。当感受到阻抗变小，就会发生负反射，反射的负电压会使信号产生下冲。信号在驱动端和远端负载之间多次反射，其结果就是信号振铃。大多数芯片的输出阻抗都很低，如果输出阻抗小于PCB走线的特性阻抗，那么在没有源端端接的情况下，必然产生信号振铃。</p>
+</li>
+</ul>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/QIwp39I00fYgRRbgefD09JUyOfdXIe94kUU0B0yikDc!/b/dFQBAAAAAAAA&bo=GgSCARoEggEDGTw!&rf=viewer_4">
+【图片来源于 模拟电子设计导论 作者 杨艳 傅强】
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/eQDQjRt2dAmMH.zSHfDOq6Ib.nlgj8wCbRIPBsg6UCA!/b/dFMBAAAAAAAA&bo=OAOtATgDrQEDGTw!&rf=viewer_4">
+【图片来源于 模拟电子设计导论 作者 杨艳 傅强】
+
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/MLPR3fMw*wfcLMLwo7ScTpdOPiMBt9wtOUzNmyb3eiM!/b/dL4AAAAAAAAA&bo=4gOyAeIDsgEDCSw!&rf=viewer_4">
+
+<ul>
+<li><h4 id="危害-1"><a href="#危害-1" class="headerlink" title="危害"></a>危害</h4></li>
+</ul>
+<p>1.逻辑误判。<br>3.由于振铃而产生的inrush current 或 inrush voltage 对<br>2.对于COMS器件，振铃可能导致上、下MOS管同时导通时间过长，急剧增加器件功耗。</p>
+<ul>
+<li><h4 id="消除方法-文章节选自"><a href="#消除方法-文章节选自" class="headerlink" title="消除方法 文章节选自"></a>消除方法 <a href="http://www.doc88.com/p-2117736717149.html" target="_blank" rel="noopener">文章节选自</a></h4>振铃现象属于信号完整性问题，其解决方法称为端节匹配。进行信号完整性的分析需要用到 IBIS 模型(Input/Output Buffers Information Specification) EDA 工具，<br>IBIS 模型是一种基于 v/i 曲线的对 i/o buffer 快速准确建模的方法，是反应芯片驱动和接收电气特性的一种国际标准，它提供一种标准的文件格式来记录如驱动源输出阻抗，上升下降时间及输入负载等参数，适合做振铃和串扰等高频效应的计算方式和仿真，IBIS 模型通常由芯片厂商提供，所用 EDA 工具由 metor graphics 的电路设计分析软件 Veri Best。</li>
+</ul>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/K*sBbTxHrgUWplmBA66AbsP2vq.Xc2Q9aGh6JSpLrX0!/b/dLYAAAAAAAAA&bo=xgMPAcYDDwEDGTw!&rf=viewer_4">
+
+
+<ul>
+<li><h4 id="1-驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。"><a href="#1-驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。" class="headerlink" title="1.驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。"></a>1.驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。</h4><ul>
+<li>功耗较小，连接简单</li>
+<li>增加了电路的 RC 常数，导致上升 rise time 变慢</li>
+</ul>
+</li>
+</ul>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/dRiSG2vq3aFKXCRUAkr5mKVcbDwoSsnYHRKdy3h0mlI!/b/dEEBAAAAAAAA&bo=uAKPALgCjwADGTw!&rf=viewer_4">
+
+<ul>
+<li><h4 id="2-负载端与传输线的阻抗匹配，可通过并行匹配的方式。"><a href="#2-负载端与传输线的阻抗匹配，可通过并行匹配的方式。" class="headerlink" title="2.负载端与传输线的阻抗匹配，可通过并行匹配的方式。"></a>2.负载端与传输线的阻抗匹配，可通过并行匹配的方式。</h4><p>并行匹配是在负载端附近并接特定元件来使负载的阻抗降低到与传输线相匹配的范围内。</p>
+<ul>
+<li><h5 id="基本并行接入"><a href="#基本并行接入" class="headerlink" title="基本并行接入"></a>基本并行接入</h5><p>直接连接一个电阻到地，实现方式简单，但其接入方式会拉低信号的高电平，且当信号处于高电平时，会在电阻上产生额外的功耗。</p>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/FJYDYg9xmAjxQWBq96Ul7LQ5e*0NBy46tZkF2gN1wJQ!/b/dDUBAAAAAAAA&bo=.wNkAfsDZAEDGTw!&rf=viewer_4">
+</li>
+<li><h5 id="RC-并行接入"><a href="#RC-并行接入" class="headerlink" title="RC 并行接入"></a>RC 并行接入</h5><p>信号振铃消除，且 rise and fall time 无明显增加。不增加任何直流功耗，但同样会拉低信号高电平的电压值</p>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/IDdIaxF9BwScH8cuztiAGabnezCsRlBAiz4hTpQgjB4!/b/dDYBAAAAAAAA&bo=EwNLARMDSwEDGTw!&rf=viewer_4">
+</li>
+<li><h5 id="Thevenin-接入"><a href="#Thevenin-接入" class="headerlink" title="Thevenin 接入"></a>Thevenin 接入</h5><p>振铃效果消除明显，且可以增加信号的驱动能力，但由于在电源和地之间接入了电阻，故电路的直流功耗较大。</p>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/n3*p34BfsVHQw.ymhUAFL1YbfTGXVqSU8cKDq7WpCrY!/b/dFYBAAAAAAAA&bo=cwNyAXMDcgEDGTw!&rf=viewer_4">
+
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="纹波-Ripple"><a href="#纹波-Ripple" class="headerlink" title="纹波 Ripple"></a>纹波 Ripple</h3><p>直流稳定电源一般是由交流电源经整流稳压等环节而形成的，这就不可避免地在直流稳定量中多少带有一些交流成份，这种叠加在直流稳定量上的交流分量就称之为纹波。纹波的成分较为复杂，它的形态一般为频率高于工频的类似正弦波的谐波，另一种则是宽度很窄的脉冲波。一般使用峰峰值，也就是压差（波峰波谷相减）的绝对值来表示。</p>
+<img src="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/fapHYjwktfa0ihy8lQCv334RvF8F8*Z0sjdK85p83so!/b/dLgAAAAAAAAA&bo=HwPSAR8D0gEDCSw!&rf=viewer_4">
+
+
+<h4 id="抑制方法"><a href="#抑制方法" class="headerlink" title="抑制方法"></a>抑制方法</h4><ul>
+<li>1 输出用π型电路滤波，LC滤波</li>
+<li>2 增大电容；  对于输出电容，使用铝电解电容以达到大容量的目的。同时并联一个陶瓷电容用以抑制高频噪声，并降低电解电容引入的ESR影响，同时，开关电源工作时，输入端Vin不变，但是电流是随开关变化的。这时输入电源不会很好地提供电流，通常在靠近电流输入端，并联电容来提供电流。</li>
+<li>3 增大电感。</li>
+<li>4 合理布线。</li>
+</ul>
+<h4 id="纹波分类"><a href="#纹波分类" class="headerlink" title="纹波分类"></a>纹波分类</h4><ul>
+<li><h5 id="低频纹波"><a href="#低频纹波" class="headerlink" title="低频纹波"></a>低频纹波</h5><ul>
+<li><p>电解电容的容量不可能无限制地增加，导致输出低频纹波的残留，一般的开关电源由AC/DC和DC/DC两部分组成。AC/DC的基本结构为整流滤波电路，它输出的直流电压中含有交流低频纹波，幅值与电源输出功率及滤波电容容量有关，该交流纹波经DC/DC变换器衰减后，在开关电源输出端表现为低频噪声，其大小由DC/DC变换器的变比和控制系统的增益决定。</p>
+</li>
+<li><p>低频纹波的抑制</p>
+<ul>
+<li>a、加大输出低频滤波的电感，电容参数，使低频纹波降低到所需的指标。</li>
+<li>b、采用前馈控制方法，降低低频纹波分量。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="高频纹波"><a href="#高频纹波" class="headerlink" title="高频纹波"></a>高频纹波</h5><ul>
+<li><p>高频纹波噪声来源于开关变换电路，在电路中，通过功率器件对输入直流电压进行高频开关变换而后整流滤波再实现稳压输出的，在其输出端含有与开关工作频率相同频率的高频纹波，其对外电路的影响大小主要和开关电源的变换频率、输出滤波器的结构和参数有关，</p>
+</li>
+<li><p>高频纹波的抑制</p>
+<ul>
+<li>a、提高开关电源工作频率，以提高高频纹波频率，有利于抑制输出高频纹波。</li>
+<li>b、加大输出高频滤波器，可以抑制输出高频纹波。</li>
+<li>c、采用多级滤波。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="共模纹波噪声"><a href="#共模纹波噪声" class="headerlink" title="共模纹波噪声"></a>共模纹波噪声</h5><ul>
+<li><p>由于功率器件与散热器底板和变压器原、副边之间存在寄生电容，导线存在寄生电感，因此当矩形波电压作用于功率器件时，开关电源的输出端因此会产生共模纹波噪声。</p>
+</li>
+<li><p>共模纹波噪声的抑制</p>
+<ul>
+<li>a. 减小与控制功率器件、变压器与机壳地之间的寄生电容</li>
+<li>b. 输出侧加共模抑制电感及电容</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="超高频谐振噪声"><a href="#超高频谐振噪声" class="headerlink" title="超高频谐振噪声"></a>超高频谐振噪声</h5><ul>
+<li><p>超高频谐振噪声主要来源于高频整流二极管反向恢复时二极管结电容、功率器件开关时功率器件结电容与线路寄生电感的谐振，频率一般为1～10MHz。</p>
+</li>
+<li><p>超高频谐振噪声的抑制</p>
+<ul>
+<li>a. 通过选用软恢复特性二极管、结电容小的开关管</li>
+<li>b. 减少布线长度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="噪声-Noise"><a href="#噪声-Noise" class="headerlink" title="噪声 Noise"></a>噪声 Noise</h3><h5 id="来源"><a href="#来源" class="headerlink" title="来源"></a>来源</h5><ul>
+<li>1.开关电源自身产生<br>Switch 在导通和截止的时，都会有一个上升时间和下降时间。这时候在电路中就会出现一个与 Switch 上升下降时间的频率相同或者奇数倍频的噪声，一般为几十MHz。同样二极管D在反向恢复瞬间，其等效电路为电阻电容和电感的串联，会引起谐振，产生的噪声频率也为几十MHz。这两种噪声一般叫做高频噪声，幅值通常要比纹波大得多。噪声脉冲串的频率比开关频率高得多，噪声电压是其峰峰值。噪声电压的振幅很大程度上与开关电源的拓扑、电路中的寄生状态及PCB的设计有关。</li>
+<li>2.外界电磁场的干扰（EMI），它能通过辐射进入开关电源</li>
+</ul>
+<h3 id="电源纹波-Power-Ripple-电源噪声（Power-Noise-的区别"><a href="#电源纹波-Power-Ripple-电源噪声（Power-Noise-的区别" class="headerlink" title="电源纹波(Power Ripple) 电源噪声（Power Noise)的区别"></a>电源纹波(Power Ripple) 电源噪声（Power Noise)的区别</h3><ul>
+<li><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>纹波:电源模块包括VRM的输出电压的波动,和复杂的供电网络无关，或者说是电源输出的源端（Source端)的电压的波动。</li>
+<li>噪声:指电源模块工作在实际产品系统中，经过供电分布网络将电源能量输送到芯片管脚处，在芯片管脚处的电压的波动，或者简单说是电源输出的末端(Sink端)的电压的波动。</li>
+</ul>
+</li>
+</ul>
+<p>电压的波动在源端叫纹波（Ripple)，在末端叫噪声（Noise)。</p>
+<ul>
+<li><h4 id="Scope-测试参数选择节选自"><a href="#Scope-测试参数选择节选自" class="headerlink" title="Scope 测试参数选择节选自"></a>Scope 测试参数选择<a href="https://www.sohu.com/a/224040782_464086" target="_blank" rel="noopener">节选自</a></h4><ul>
+<li>1 带宽 BandWidth<br>电源纹波测量的带宽选择取决于电源开关管的上升时间，一般功率小的电源开关频率可以达到1MHz甚至更大，对应的开关管的上升时间越小.例如开关管上升时间为30ns，1/3的上升时间为10ns,而100MHz的示波器的上升时间只有3.5ns。因此，用100MHz带宽示波器测量开关电源的开关管是足够的。事实上，很少有开关管上升时间只有30ns的，限制带宽到20MHz就足够了。<blockquote>
+<p>示波器毕竟不是一个理想的仪器，测量系统本身有噪声。这些噪声包括放大器的噪声， ADC的噪声，有源探头的噪声，探头地线感应的空间辐射噪声及地环路耦合的传导噪声从信噪比的角度理解，只有当被测信号的能量 远大于示波器测量系统本身带来的噪声能量的 时候即信噪比足够大的时候，选择的带宽才是 合适的。</p>
+</blockquote>
+</li>
+<li>2 采样率 sample rate<br>一般情况下，按照测量开关管所需要的采样率选择即可， 对于多数MOS管,按照250MS/s就足够了。<blockquote>
+<p>采样率的选取原则是测试感兴趣的波形细节的上升沿采样3-5个点，最好是5个以上的点，当然，高采样率减少了测试波形的失真。</p>
+</blockquote>
+</li>
+<li>3 捕获时间<br>基于电网220V的AC输入的电源纹波包含了开关频率和工频成份; 工频成份是整流之后的100Hz信号 。捕获两个完整100Hz周期需要20ms，所以，建议时基设置为2ms/div以上。<blockquote>
+<p>存储深度=采样率*采样时间,<br>提高示波器的存储深度可以间接提高示波器的采样率：当要测量较长时间的波形时，由于存储深度是固定的，所以只能降低采样率来达到，但这样势必造成波形质量的下降；如果增大存储深度，则可以以更高的采样率来测量，以获取不失真的波形。</p>
+</blockquote>
+</li>
+<li>4 底噪<br>底噪声表示示波器没有任何信号输入时的基线幅值。其 Pk-Pk 越小越好<blockquote>
+<p>如果示波器和探头组成的测量系统的底噪接近或大于被测电源纹波/电源噪声，也就是测量的信噪比（SNR）太小，电源纹波/电源噪声被示波器本地噪声淹没了。</p>
+</blockquote>
+</li>
+<li>5 耦合方式<ul>
+<li>DC 耦合 or AC耦合？<br>设置AC耦合的唯一原因是在DC耦合情况下，在量程只有2mv/div甚至更小时，有些示波器的偏置电压范围不够</li>
+<li>负载效应<br>探头是一种“电路网络”，是信号源必须驱动的一个额外的“负载”。如果探头阻抗远大于被测电路阻抗（对于高速电路，一般是50ohm），被探头吸收的电路就非常非常小，如果探头的阻抗等于电路阻抗，从被测电路吸收的电流和被测电路上流过的电流一样。</li>
+</ul>
+</li>
+<li>AC 1M欧 or DC 50欧+隔直电容？<br>在芯片端的电源和地阻抗通常是毫欧级别的，高频的电源噪声从同轴电缆传输到示波器通道后，当示波器输入阻抗是50欧时，同轴电缆的特性阻抗50欧与通道的完全匹配，没有反射；而通道输入阻抗为1M欧时，相当于是高阻，根据传输线理论，电源噪声发生反射，这样，导致1M欧输入阻抗时测试的电源噪声高于50欧。</li>
+<li>6 接地<br>地线越短越好</li>
+</ul>
+</li>
+</ul>
+<hr>
 
       
     </div>
@@ -709,12 +684,12 @@ pic 电容阻抗-频率特性曲线
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/10/02/hardwareComSelectionCap20191023/">电容概念、等效模型及选型</a></p>
+  <p><span>本文标题:</span><a href="/2019/10/24/HardwareConceptExlplanation_1/">常见概念、专业名词解释 (一)</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Arvin Yao 的个人博客">Arvin Yao</a></p>
-  <p><span>发布时间:</span>2019年10月02日 - 23:26</p>
-  <p><span>最后更新:</span>2019年10月23日 - 15:37</p>
-  <p><span>原始链接:</span><a href="/2019/10/02/hardwareComSelectionCap20191023/" title="电容概念、等效模型及选型">http://yoursite.com/2019/10/02/hardwareComSelectionCap20191023/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/10/02/hardwareComSelectionCap20191023/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年10月24日 - 10:30</p>
+  <p><span>最后更新:</span>2019年10月31日 - 17:17</p>
+  <p><span>原始链接:</span><a href="/2019/10/24/HardwareConceptExlplanation_1/" title="常见概念、专业名词解释 (一)">http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -755,7 +730,7 @@ pic 电容阻抗-频率特性曲线
           
             <a href="/tags/Hardware/" <i class="fa fa-tag"> Hardware</a>
           
-            <a href="/tags/Capacitor/" <i class="fa fa-tag"> Capacitor</a>
+            <a href="/tags/Ripple-Noise-overshoot/" <i class="fa fa-tag"> Ripple Noise overshoot</a>
           
         </div>
       
@@ -783,8 +758,8 @@ pic 电容阻抗-频率特性曲线
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/20/hardwareComSelectionRes20190927/" rel="next" title="电阻概念、等效模型及选型">
-                <i class="fa fa-chevron-left"></i> 电阻概念、等效模型及选型
+              <a href="/2019/10/02/hardwareComSelectionCap20191023/" rel="next" title="电容概念、等效模型及选型">
+                <i class="fa fa-chevron-left"></i> 电容概念、等效模型及选型
               </a>
             
           </div>
@@ -792,10 +767,6 @@ pic 电容阻抗-频率特性曲线
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/10/24/HardwareConceptExlplanation_1/" rel="prev" title="常见概念、专业名词解释 (一)">
-                常见概念、专业名词解释 (一) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -969,7 +940,7 @@ pic 电容阻抗-频率特性曲线
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、电容器-Capacitor-）概念和一般特征"><span class="nav-number">1.</span> <span class="nav-text">一、电容器 ( Capacitor ）概念和一般特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、电容的分类与封装"><span class="nav-number">2.</span> <span class="nav-text">二、电容的分类与封装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常见分类方法"><span class="nav-number">2.1.</span> <span class="nav-text">常见分类方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容量标示"><span class="nav-number">2.2.</span> <span class="nav-text">容量标示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#封装"><span class="nav-number">2.3.</span> <span class="nav-text">封装</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、主要性能指标"><span class="nav-number">3.</span> <span class="nav-text">三、主要性能指标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、模型及特性曲线"><span class="nav-number">4.</span> <span class="nav-text">四、模型及特性曲线</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#理想模型"><span class="nav-number">4.1.</span> <span class="nav-text">理想模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实际电容的等效模型"><span class="nav-number">4.2.</span> <span class="nav-text">实际电容的等效模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、常见电容基本特性"><span class="nav-number">5.</span> <span class="nav-text">五、常见电容基本特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#薄膜电容-Film-Capacitor"><span class="nav-number">5.1.</span> <span class="nav-text">薄膜电容  Film Capacitor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#铝电解电容-Electrolytic-Capacitor"><span class="nav-number">5.2.</span> <span class="nav-text">铝电解电容  Electrolytic Capacitor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#铝电解电容-湿式"><span class="nav-number">5.3.</span> <span class="nav-text">铝电解电容(湿式)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚合物铝电解电容"><span class="nav-number">5.4.</span> <span class="nav-text">聚合物铝电解电容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#钽电容"><span class="nav-number">5.5.</span> <span class="nav-text">钽电容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#陶瓷电容-Ceramic-Capacitor"><span class="nav-number">5.6.</span> <span class="nav-text">陶瓷电容(Ceramic Capacitor)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、应用及选型"><span class="nav-number">6.</span> <span class="nav-text">六、应用及选型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#General-Principle"><span class="nav-number">6.1.</span> <span class="nav-text">General Principle</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Vender-Website"><span class="nav-number">7.0.0.1.</span> <span class="nav-text">Vender Website</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#时域-time-domain-、频域-frequency-domain"><span class="nav-number">1.</span> <span class="nav-text">时域(time domain)、频域(frequency domain)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#地弹噪声和回流噪声"><span class="nav-number">2.</span> <span class="nav-text">地弹噪声和回流噪声</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#地弹"><span class="nav-number">2.1.</span> <span class="nav-text">地弹</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念"><span class="nav-number">2.1.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#影响及因素"><span class="nav-number">2.1.2.</span> <span class="nav-text">影响及因素</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回流噪声"><span class="nav-number">2.2.</span> <span class="nav-text">回流噪声</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过冲-overshoot-、下冲-undershoot"><span class="nav-number">3.</span> <span class="nav-text">过冲(overshoot)、下冲(undershoot)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#概念-1"><span class="nav-number">3.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#产生原因"><span class="nav-number">3.2.</span> <span class="nav-text">产生原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#危害"><span class="nav-number">3.3.</span> <span class="nav-text">危害</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设计原则"><span class="nav-number">3.4.</span> <span class="nav-text">设计原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消除方法"><span class="nav-number">3.5.</span> <span class="nav-text">消除方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回钩"><span class="nav-number">4.</span> <span class="nav-text">回钩</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念：上电过程电源不是线性增加，而会出现电压降低的现象"><span class="nav-number">4.0.1.</span> <span class="nav-text">概念：上电过程电源不是线性增加，而会出现电压降低的现象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#产生原因及消除方法"><span class="nav-number">4.0.2.</span> <span class="nav-text">产生原因及消除方法</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#振铃-Ring"><span class="nav-number">5.</span> <span class="nav-text">振铃(Ring)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#阻抗变化、信号反射"><span class="nav-number">5.1.</span> <span class="nav-text">阻抗变化、信号反射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#振铃产生原因"><span class="nav-number">5.2.</span> <span class="nav-text">振铃产生原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#危害-1"><span class="nav-number">5.3.</span> <span class="nav-text">危害</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消除方法-文章节选自"><span class="nav-number">5.4.</span> <span class="nav-text">消除方法 文章节选自</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。"><span class="nav-number">5.5.</span> <span class="nav-text">1.驱动端与传输线的阻抗匹配，可通过串接电阻进行阻抗匹配。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-负载端与传输线的阻抗匹配，可通过并行匹配的方式。"><span class="nav-number">5.6.</span> <span class="nav-text">2.负载端与传输线的阻抗匹配，可通过并行匹配的方式。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本并行接入"><span class="nav-number">5.6.1.</span> <span class="nav-text">基本并行接入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RC-并行接入"><span class="nav-number">5.6.2.</span> <span class="nav-text">RC 并行接入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Thevenin-接入"><span class="nav-number">5.6.3.</span> <span class="nav-text">Thevenin 接入</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#纹波-Ripple"><span class="nav-number">6.</span> <span class="nav-text">纹波 Ripple</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#抑制方法"><span class="nav-number">6.1.</span> <span class="nav-text">抑制方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#纹波分类"><span class="nav-number">6.2.</span> <span class="nav-text">纹波分类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#低频纹波"><span class="nav-number">6.2.1.</span> <span class="nav-text">低频纹波</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#高频纹波"><span class="nav-number">6.2.2.</span> <span class="nav-text">高频纹波</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#共模纹波噪声"><span class="nav-number">6.2.3.</span> <span class="nav-text">共模纹波噪声</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#超高频谐振噪声"><span class="nav-number">6.2.4.</span> <span class="nav-text">超高频谐振噪声</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#噪声-Noise"><span class="nav-number">7.</span> <span class="nav-text">噪声 Noise</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#来源"><span class="nav-number">7.0.1.</span> <span class="nav-text">来源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电源纹波-Power-Ripple-电源噪声（Power-Noise-的区别"><span class="nav-number">8.</span> <span class="nav-text">电源纹波(Power Ripple) 电源噪声（Power Noise)的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义"><span class="nav-number">8.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Scope-测试参数选择节选自"><span class="nav-number">8.2.</span> <span class="nav-text">Scope 测试参数选择节选自</span></a></li></ol></li></div>
             
 
           </div>
