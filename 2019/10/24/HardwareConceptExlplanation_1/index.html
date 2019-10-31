@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hardware,Ripple Ring,">
+  <meta name="keywords" content="Hardware,Ripple Noise overshoot,">
 
 
 
@@ -94,7 +94,7 @@
 
 
 <meta name="description" content="时域(time domain)、频域(frequency domain) 时域(time domain)是以时间为基准的电压或电流的变化的过程，可以用示波器观察到。它通常用于找出管脚到管脚的延时(delays)、偏移(skew)、过冲 (overshoot)、下冲(undershoot)以及建立时间(settling times)。 频域(frequency domain)是以频率为基准的电压或电">
-<meta name="keywords" content="Hardware,Ripple Ring">
+<meta name="keywords" content="Hardware,Ripple Noise overshoot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常见概念、专业名词解释 (一)">
 <meta property="og:url" content="http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/index.html">
@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/IDdIaxF9BwScH8cuztiAGabnezCsRlBAiz4hTpQgjB4!/b/dDYBAAAAAAAA&bo=EwNLARMDSwEDGTw!&rf=viewer_4">
 <meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/n3*p34BfsVHQw.ymhUAFL1YbfTGXVqSU8cKDq7WpCrY!/b/dFYBAAAAAAAA&bo=cwNyAXMDcgEDGTw!&rf=viewer_4">
 <meta property="og:image" content="http://m.qpic.cn/psb?/V14L5GMC03Kjsr/fapHYjwktfa0ihy8lQCv334RvF8F8*Z0sjdK85p83so!/b/dLgAAAAAAAAA&bo=HwPSAR8D0gEDCSw!&rf=viewer_4">
-<meta property="og:updated_time" content="2019-10-31T09:30:32.000Z">
+<meta property="og:updated_time" content="2019-10-31T09:35:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见概念、专业名词解释 (一)">
 <meta name="twitter:description" content="时域(time domain)、频域(frequency domain) 时域(time domain)是以时间为基准的电压或电流的变化的过程，可以用示波器观察到。它通常用于找出管脚到管脚的延时(delays)、偏移(skew)、过冲 (overshoot)、下冲(undershoot)以及建立时间(settling times)。 频域(frequency domain)是以频率为基准的电压或电">
@@ -395,8 +395,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hardware/常见概念、专业名词解释/Ripple—Noise—overshoot—Ring/" itemprop="url" rel="index">
-                    <span itemprop="name">Ripple—Noise—overshoot—Ring</span>
+                  <a href="/categories/Hardware/常见概念、专业名词解释/Noise-Ripple-Ring/" itemprop="url" rel="index">
+                    <span itemprop="name">Noise Ripple Ring</span>
                   </a>
                 </span>
 
@@ -502,15 +502,25 @@
 </ul>
 </li>
 <li><h4 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h4><ul>
-<li><p>1.一般电路设计，多半会使上升时间最小化，同时也将失真限制在可接受范围内。而最小化过冲(过冲可视为信号失真)与减小上升时间的目标会发生冲突。</p>
+<li><ol>
+<li>一般电路设计，多半会使上升时间最小化，同时也将失真限制在可接受范围内。而最小化过冲(过冲可视为信号失真)与减小上升时间的目标会发生冲突。</li>
+</ol>
 </li>
-<li><p>2.过冲的大小依赖于经历阻尼现象的时间。通常还伴有安定时间，即输出到达稳态的时长</p>
+<li><ol start="2">
+<li>过冲的大小依赖于经历阻尼现象的时间。通常还伴有安定时间，即输出到达稳态的时长</li>
+</ol>
 </li>
 </ul>
 </li>
 <li><h4 id="消除方法"><a href="#消除方法" class="headerlink" title="消除方法"></a>消除方法</h4><ul>
-<li>1.匹配，或叫端接（termination）。端接可总结为两种形式：远端串联匹配消除二次反射，终端并联匹配消除一次反射。注意不是每种方式都适用于任何场合。例如50ohm并联匹配一般不适用与LVTTL/LVCMOS电平逻辑，因为电阻上消耗的功率很大。</li>
-<li>2.减少驱动端的驱动电流。</li>
+<li><ol>
+<li>匹配，或叫端接（termination）。端接可总结为两种形式：远端串联匹配消除二次反射，终端并联匹配消除一次反射。注意不是每种方式都适用于任何场合。例如50ohm并联匹配一般不适用与LVTTL/LVCMOS电平逻辑，因为电阻上消耗的功率很大。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>减少驱动端的驱动电流。</li>
+</ol>
+</li>
 </ul>
 </li>
 </ul>
@@ -706,7 +716,7 @@
   <p><span>本文标题:</span><a href="/2019/10/24/HardwareConceptExlplanation_1/">常见概念、专业名词解释 (一)</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Arvin Yao 的个人博客">Arvin Yao</a></p>
   <p><span>发布时间:</span>2019年10月24日 - 10:30</p>
-  <p><span>最后更新:</span>2019年10月31日 - 17:30</p>
+  <p><span>最后更新:</span>2019年10月31日 - 17:35</p>
   <p><span>原始链接:</span><a href="/2019/10/24/HardwareConceptExlplanation_1/" title="常见概念、专业名词解释 (一)">http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/10/24/HardwareConceptExlplanation_1/" aria-label="复制成功！"></i></span>
   </p>
@@ -749,7 +759,7 @@
           
             <a href="/tags/Hardware/" <i class="fa fa-tag"> Hardware</a>
           
-            <a href="/tags/Ripple-Ring/" <i class="fa fa-tag"> Ripple Ring</a>
+            <a href="/tags/Ripple-Noise-overshoot/" <i class="fa fa-tag"> Ripple Noise overshoot</a>
           
         </div>
       
@@ -980,7 +990,7 @@
 	    <div class="widget-wrap">
     	      <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%" background-color="“#FFFFFF”">
-                  <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Capacitor/">Capacitor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/">Hardware</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Resistor/">Resistor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ripple-Ring/">Ripple Ring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/">about</a><span class="tag-list-count">1</span></li></ul>
+                  <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Capacitor/">Capacitor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/">Hardware</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Resistor/">Resistor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ripple-Noise-overshoot/">Ripple Noise overshoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/">about</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
     	      </div>
 	    </div>
