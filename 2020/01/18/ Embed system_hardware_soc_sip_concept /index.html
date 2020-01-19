@@ -118,7 +118,7 @@
 <meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7vdNVUCfPVvwvFQV8oQNbMMsSXTKEmibd.lAjCqWC96RLAQ7D0pCxh0rjdQ0e48znQB5nVkCXuNL*E4omKeFre0!/b&bo=HQOmAR0DpgEDCSw!&rf=viewer_4">
 <meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7saywcpkOvQRv22wKvZV9AeHQujxbuSHcVUzhvBrtE9afh0twVDSU05AIXRPe.tjqLqkDcsCZbTeoD5sbrdgSh8!/b&bo=mAIvAZgCLwEDGTw!&rf=viewer_4">
 <meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7mvQzfcvOvlgQKXNGpJkSBigAshIAh1Fk4OmknlbTPCVgcO3mR73zEgmS6tCzHh0sFzC4iRQp6JPQwlor0Kow7A!/b&bo=iAIKAYgCCgEDGTw!&rf=viewer_4">
-<meta property="og:updated_time" content="2020-01-19T08:41:40.000Z">
+<meta property="og:updated_time" content="2020-01-19T08:55:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CPU MCU SOC 和 SIP 概念解释">
 <meta name="twitter:description" content="CPU central processing unitCPU 是计算系统的运算和控制核心，主要由运算器、控制器和寄存器及实现它们之间联系的数据、控制和地址总线构成。CPU 的工作就是单纯进行数据的计算，至于数据从哪里采集，如何存放等，是不在它的负责范围之内。其核心模块为运算器和控制器。  运算器运算器是指计算机中进行各种算术和逻辑运算操作的部件， 其中算术逻辑单元是中央处理核心的部分。 控制器控制">
@@ -616,23 +616,18 @@
 </ul>
 <h5 id="2-Package-封装。"><a href="#2-Package-封装。" class="headerlink" title="2. Package 封装。"></a>2. Package 封装。</h5><p>单片IC在从晶圆上切割下来后的保护性外壳及相关附件,作用如下：</p>
 <ul>
-<li><ol>
-<li>保护硅片。因为硅芯片非常的脆弱，即使是非常细小的灰尘或者水滴都可以破坏它们的功能，所以需要将IC芯片封装来进行保护。</li>
-</ol>
+<li><p>1 保护硅片。因为硅芯片非常的脆弱，即使是非常细小的灰尘或者水滴都可以破坏它们的功能，所以需要将IC芯片封装来进行保护。</p>
 </li>
-<li><ol start="2">
-<li>进行尺度的放大.芯片本身通常很小，通过封装后尺度放大，便于后续PCB板级系统使用。</li>
-</ol>
+<li><p>2 进行尺度的放大.芯片本身通常很小，通过封装后尺度放大，便于后续PCB板级系统使用。</p>
 </li>
-<li><ol start="3">
-<li>电气连接，通过封装，芯片和外界进行信息的交换。</li>
-</ol>
+<li><p>3 电气连接，通过封装，芯片和外界进行信息的交换。</p>
 </li>
-</ul>
-<h5 id="封装材料"><a href="#封装材料" class="headerlink" title="封装材料"></a>封装材料</h5><p>封装产品按工艺或材料通常分为：塑料封装、陶瓷封装和金属封装</p>
+<li><h5 id="封装材料"><a href="#封装材料" class="headerlink" title="封装材料"></a>封装材料</h5><p>封装产品按工艺或材料通常分为：塑料封装、陶瓷封装和金属封装</p>
 <ul>
 <li>塑料封装通常称为塑封，主要应用于商业级产品，具有低成本优势，但在芯片散热、稳定性、气密性方面相对较差。</li>
 <li>陶瓷封装和金属封装则多用于工业级产品以及航空航天、军工等领域，其散热优良，气密性好、可靠性高。同时，陶瓷和金属封装具有可拆解的优势，便于故障查找和问题“归零”。图1-1所示为三种不同工艺材料的封装。</li>
+</ul>
+</li>
 </ul>
 <hr>
 <p>SiP（System in Package）系统级封装，将不同技术、工艺和材料制作的裸芯片封装到一起，包括处理器、存储器等功能芯片集成在一个封装内，从而实现一个基本完整的功能。也可将置于基板上的被动无源元件，内埋于多层结构的基板中，以节省表面使用空间，达到缩小体积的目标。简单来说就是。SIP 是一个封装内包含了多个独立的芯片</p>
@@ -675,10 +670,9 @@
 
 
 
-
 </li>
 </ul>
-<p><a href="https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/284033?fromtitle=CPU&fromid=120556" target="_blank" rel="noopener">中央处理器</a><br><a href="https://baike.baidu.com/item/%E5%A4%84%E7%90%86%E5%99%A8%E7%BB%93%E6%9E%84/14724193?fr=aladdin" target="_blank" rel="noopener">处理器结构</a><br><a href="https://baike.baidu.com/item/%E5%BE%AE%E5%A4%84%E7%90%86%E5%99%A8/104320" target="_blank" rel="noopener">微处理器</a></p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/284033?fromtitle=CPU&fromid=120556" target="_blank" rel="noopener">中央处理器</a><br><a href="https://baike.baidu.com/item/%E5%A4%84%E7%90%86%E5%99%A8%E7%BB%93%E6%9E%84/14724193?fr=aladdin" target="_blank" rel="noopener">处理器结构</a><br><a href="https://baike.baidu.com/item/%E5%BE%AE%E5%A4%84%E7%90%86%E5%99%A8/104320" target="_blank" rel="noopener">微处理器</a></p>
 <p><a href="https://baike.baidu.com/item/%E7%B2%BE%E7%AE%80%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/661859?fromtitle=risc&fromid=62696&fr=aladdin" target="_blank" rel="noopener">精简指令集计算机 RISC</a><br><a href="https://baike.baidu.com/item/%E5%A4%8D%E6%9D%82%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/10307148?fromtitle=CISC&fromid=1189443&fr=aladdin" target="_blank" rel="noopener">复杂指令集计算机 CISC</a></p>
 <p><a href="https://baike.baidu.com/item/IP%E6%A0%B8/11003763?fr=aladdin" target="_blank" rel="noopener">IP核</a><br><a href="https://baike.baidu.com/item/soc/1053305?fr=aladdin" target="_blank" rel="noopener">SOC 系统级芯片</a><br><a href="https://www.jianshu.com/p/af2a8ca04dbc" target="_blank" rel="noopener">Soc芯片设计相关知识</a></p>
 
@@ -710,7 +704,7 @@
   <p><span>本文标题:</span><a href="/2020/01/18/ Embed system_hardware_soc_sip_concept /">CPU MCU SOC 和 SIP 概念解释</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Arvin Yao 的个人博客">Arvin Yao</a></p>
   <p><span>发布时间:</span>2020年01月18日 - 21:44</p>
-  <p><span>最后更新:</span>2020年01月19日 - 16:41</p>
+  <p><span>最后更新:</span>2020年01月19日 - 16:55</p>
   <p><span>原始链接:</span><a href="/2020/01/18/ Embed system_hardware_soc_sip_concept /" title="CPU MCU SOC 和 SIP 概念解释">http://yoursite.com/2020/01/18/ Embed system_hardware_soc_sip_concept /</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2020/01/18/ Embed system_hardware_soc_sip_concept /" aria-label="复制成功！"></i></span>
   </p>
@@ -963,7 +957,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CPU-central-processing-unit"><span class="nav-number">1.</span> <span class="nav-text">CPU central processing unit</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#运算器"><span class="nav-number">1.0.1.</span> <span class="nav-text">运算器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#控制器"><span class="nav-number">1.0.2.</span> <span class="nav-text">控制器</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#MCU-微控制单元（-Micro-controller-Unit-）"><span class="nav-number">2.</span> <span class="nav-text">MCU 微控制单元（ Micro controller Unit ）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#MCU-主要厂商"><span class="nav-number">2.0.1.</span> <span class="nav-text">MCU 主要厂商</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SoC（System-on-Chip-）"><span class="nav-number">3.</span> <span class="nav-text">SoC（System on Chip ）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#IP核（Intellectual-Property-core）"><span class="nav-number">3.0.1.</span> <span class="nav-text">IP核（Intellectual Property core）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SIP-System-In-Package"><span class="nav-number">4.</span> <span class="nav-text">SIP System In Package</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-裸片-die"><span class="nav-number">4.0.1.</span> <span class="nav-text">1. 裸片 die</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-Package-封装。"><span class="nav-number">4.0.2.</span> <span class="nav-text">2. Package 封装。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#封装材料"><span class="nav-number">4.0.3.</span> <span class="nav-text">封装材料</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图片来源-《SiP系统级封装设计与仿真——Mentor-Expedition-Enterprise-Flow高级应用指南》"><span class="nav-number">4.0.4.</span> <span class="nav-text">图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见的-SIP-堆叠方式"><span class="nav-number">4.1.</span> <span class="nav-text">常见的 SIP 堆叠方式</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CPU-central-processing-unit"><span class="nav-number">1.</span> <span class="nav-text">CPU central processing unit</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#运算器"><span class="nav-number">1.0.1.</span> <span class="nav-text">运算器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#控制器"><span class="nav-number">1.0.2.</span> <span class="nav-text">控制器</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#MCU-微控制单元（-Micro-controller-Unit-）"><span class="nav-number">2.</span> <span class="nav-text">MCU 微控制单元（ Micro controller Unit ）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#MCU-主要厂商"><span class="nav-number">2.0.1.</span> <span class="nav-text">MCU 主要厂商</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SoC（System-on-Chip-）"><span class="nav-number">3.</span> <span class="nav-text">SoC（System on Chip ）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#IP核（Intellectual-Property-core）"><span class="nav-number">3.0.1.</span> <span class="nav-text">IP核（Intellectual Property core）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SIP-System-In-Package"><span class="nav-number">4.</span> <span class="nav-text">SIP System In Package</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-裸片-die"><span class="nav-number">4.0.1.</span> <span class="nav-text">1. 裸片 die</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-Package-封装。"><span class="nav-number">4.0.2.</span> <span class="nav-text">2. Package 封装。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#封装材料"><span class="nav-number">4.0.3.</span> <span class="nav-text">封装材料</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图片来源-《SiP系统级封装设计与仿真——Mentor-Expedition-Enterprise-Flow高级应用指南》"><span class="nav-number">4.0.4.</span> <span class="nav-text">图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见的-SIP-堆叠方式"><span class="nav-number">4.1.</span> <span class="nav-text">常见的 SIP 堆叠方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-number">5.</span> <span class="nav-text">Reference</span></a></li></div>
             
 
           </div>
