@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hardware,EMI EMC 3C,">
+  <meta name="keywords" content="Embeded System Tech,MCU,">
 
 
 
@@ -93,18 +93,36 @@
 
 
 
-<meta name="description" content="EMI （ 电磁干扰  Electromagnetic Interference )电磁干扰，是指电子设备自身工作过程中，产生的电磁波，对外发射，从而对设备其它部分或外部其它设备造成干扰。例如，TV荧光屏上常见的“雪花”，便表示接受到的讯号被干扰。 EMC ( Electromagnetic Compatibility )电磁兼容（EMC），指的是对电子产品在电磁场方面干扰大小（EMI）和抗干扰能">
-<meta name="keywords" content="Hardware,EMI EMC 3C">
+<meta name="description" content="CPU central processing unitCPU 是计算系统的运算和控制核心，主要由运算器、控制器和寄存器及实现它们之间联系的数据、控制和地址总线构成。CPU 的工作就是单纯进行数据的计算，至于数据从哪里采集，如何存放等，是不在它的负责范围之内。其核心模块为运算器和控制器。  运算器运算器是指计算机中进行各种算术和逻辑运算操作的部件， 其中算术逻辑单元是中央处理核心的部分。 控制器控制">
+<meta name="keywords" content="Embeded System Tech,MCU">
 <meta property="og:type" content="article">
-<meta property="og:title" content="EMC／EMI基本概念">
-<meta property="og:url" content="http://yoursite.com/2019/11/02/hardwareEMC_1/index.html">
+<meta property="og:title" content="CPU MCU SOC 和 SIP 概念解释">
+<meta property="og:url" content="http://yoursite.com/2020/01/18/ Embed system_hardware_soc_sip_concept /index.html">
 <meta property="og:site_name" content="Arvin Home">
-<meta property="og:description" content="EMI （ 电磁干扰  Electromagnetic Interference )电磁干扰，是指电子设备自身工作过程中，产生的电磁波，对外发射，从而对设备其它部分或外部其它设备造成干扰。例如，TV荧光屏上常见的“雪花”，便表示接受到的讯号被干扰。 EMC ( Electromagnetic Compatibility )电磁兼容（EMC），指的是对电子产品在电磁场方面干扰大小（EMI）和抗干扰能">
+<meta property="og:description" content="CPU central processing unitCPU 是计算系统的运算和控制核心，主要由运算器、控制器和寄存器及实现它们之间联系的数据、控制和地址总线构成。CPU 的工作就是单纯进行数据的计算，至于数据从哪里采集，如何存放等，是不在它的负责范围之内。其核心模块为运算器和控制器。  运算器运算器是指计算机中进行各种算术和逻辑运算操作的部件， 其中算术逻辑单元是中央处理核心的部分。 控制器控制">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-04T06:22:30.000Z">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7sNzgVWDSQH1whLg4DChd5W.DnzyAqFPH6r8CpSsZmYapRvHzRT9UOIVXs3DUD6QxFbSYib3uOdGQ7Txenb9CKc!/b&bo=tgJuAbYCbgEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7j3fskssuko5iHVvZFj2XJXNZ83xSLZ5q.QtjggB1KrhoWINpbKQT43z5ibbreF90XUVKIH0TIrXb8fcPlxjcbM!/b&bo=3gLmAd4C5gEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7s2nvSq*I9a3tD4XGSxqUn5Qqq7nEpKFaG9DElOhdVUosCa.NdEOaFGmsYIJIqOjW8JAdeFIwI28XxrNcseQMzY!/b&bo=xAPPAcQDzwEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7vBTuuRQZQtH3kb1ia1FOey0qWLEnadeGfe2h5F*T*gZkQovsfzYa3iC9WbR6AfeB45YMX*TjQgoCIS9oIUxFxk!/b&bo=wQNJAsEDSQIDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7qioa4JC4JyLSD0t5bsr9233sRL98mjBkKdXYLL2ec9Kch5QBNGiEEZBfAsatx0eqlYVeMtQ4rOR7J0DjxnzS.0!/b&bo=mwNfAZsDXwEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7kHcg*.B7XyfAcJf7XYhh88ThWR3zPkjNY.RfulZd*NE6XMkV0YFdjm3O.atSM448KpvQcNvNeDsifQXs8nha8Q!/b&bo=mAM7AZgDOwEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7hGwyHO8Ea75ITkhJYr1qQ2mBHBloAFWbtccQam2tmCUz80h.avN7OaxPGovbuy4ms72GC3XiFfkKOcCejfxsJM!/b&bo=rQJwAa0CcAEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7tvnDKld4TGQEl1BI0VbEOWPSlNNjd.LkvNi0vzrmnzLaNaK0ugjKi9bbp9bt6yR2wbxFrMprYYwiuz877xMhNU!/b&bo=IwMbAiMDGwIDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7jy3rul.Wabu6eP3y2xOEMsjB3sPSd2LpAmvQCOhQ6zRb8OXAtZmyIoUKhEAyiN3*oAXKvUA9axQYiqo075y4Fs!/b&bo=*AJuA*wCbgMDORw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7q9cPIzObh7aa7xVPqYLS0Bimzeh1bSP9KyrGLx3QBTBkhUIbCy9fCkoE1HeSg9UcQA2macCCwDpKqV.LPp2PXk!/b&bo=CgRfAQoEXwEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7pytULpYdT6k6tkzxIxXwyiIxEGCEWdv.mkw4ylKVrraZVaZcX64ancR1AdvEOBBVvgtA8DjN*uROiIArp8uEHc!/b&bo=SgNYAkoDWAIDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7tcaCxDDAa2QXEmi7M8ZffO.sqeJBar.6Y*oZp7Sw*.VvJgUHAUwaRedeyPZu4heTCclB*DNDowwAjxtVN6qOcY!/b&bo=0wTBAdMEwQEDORw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7vu5vgMgpSg8fTZL6JXQVUE6UsDavd03zDXnrAlBcnzYqO8voWLG9htzYS1dUaulgr0OCsqu*iLYH4jNG.0fwlE!/b&bo=BwOnAQcDpwEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7pww6ODvw8bqI7Kgk8rZdsLyKz9bJ2cYOs3kgtTDaA1HcAY5KH7nlBPR6i.ihw4B6SYSP9EPM7gyrs0Kv2MA.EM!/b&bo=HgPOAB4DzgADGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7vdNVUCfPVvwvFQV8oQNbMMsSXTKEmibd.lAjCqWC96RLAQ7D0pCxh0rjdQ0e48znQB5nVkCXuNL*E4omKeFre0!/b&bo=HQOmAR0DpgEDCSw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7saywcpkOvQRv22wKvZV9AeHQujxbuSHcVUzhvBrtE9afh0twVDSU05AIXRPe.tjqLqkDcsCZbTeoD5sbrdgSh8!/b&bo=mAIvAZgCLwEDGTw!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7mvQzfcvOvlgQKXNGpJkSBigAshIAh1Fk4OmknlbTPCVgcO3mR73zEgmS6tCzHh0sFzC4iRQp6JPQwlor0Kow7A!/b&bo=iAIKAYgCCgEDGTw!&rf=viewer_4">
+<meta property="og:updated_time" content="2020-01-19T08:41:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EMC／EMI基本概念">
-<meta name="twitter:description" content="EMI （ 电磁干扰  Electromagnetic Interference )电磁干扰，是指电子设备自身工作过程中，产生的电磁波，对外发射，从而对设备其它部分或外部其它设备造成干扰。例如，TV荧光屏上常见的“雪花”，便表示接受到的讯号被干扰。 EMC ( Electromagnetic Compatibility )电磁兼容（EMC），指的是对电子产品在电磁场方面干扰大小（EMI）和抗干扰能">
+<meta name="twitter:title" content="CPU MCU SOC 和 SIP 概念解释">
+<meta name="twitter:description" content="CPU central processing unitCPU 是计算系统的运算和控制核心，主要由运算器、控制器和寄存器及实现它们之间联系的数据、控制和地址总线构成。CPU 的工作就是单纯进行数据的计算，至于数据从哪里采集，如何存放等，是不在它的负责范围之内。其核心模块为运算器和控制器。  运算器运算器是指计算机中进行各种算术和逻辑运算操作的部件， 其中算术逻辑单元是中央处理核心的部分。 控制器控制">
+<meta name="twitter:image" content="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7sNzgVWDSQH1whLg4DChd5W.DnzyAqFPH6r8CpSsZmYapRvHzRT9UOIVXs3DUD6QxFbSYib3uOdGQ7Txenb9CKc!/b&bo=tgJuAbYCbgEDCSw!&rf=viewer_4">
 
 
 
@@ -134,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/11/02/hardwareEMC_1/">
+  <link rel="canonical" href="http://yoursite.com/2020/01/18/ Embed system_hardware_soc_sip_concept /">
 
 
 
 
 
-  <title>EMC／EMI基本概念 | Arvin Home</title>
+  <title>CPU MCU SOC 和 SIP 概念解释 | Arvin Home</title>
   
 
 
@@ -309,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/02/hardwareEMC_1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/18/ Embed system_hardware_soc_sip_concept /">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Arvin Yao">
@@ -326,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">EMC／EMI基本概念</h1>
+          <h1 class="post-title" itemprop="name headline">CPU MCU SOC 和 SIP 概念解释</h1>
         
 
         <div class="post-meta">
@@ -338,8 +356,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-02T09:28:28+08:00">
-                2019-11-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-18T21:44:38+08:00">
+                2020-01-18
               </time>
             
 
@@ -361,8 +379,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hardware/" itemprop="url" rel="index">
-                    <span itemprop="name">Hardware</span>
+                  <a href="/categories/嵌入式软硬件技术基础/" itemprop="url" rel="index">
+                    <span itemprop="name">嵌入式软硬件技术基础</span>
                   </a>
                 </span>
 
@@ -372,8 +390,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hardware/EMC-与-热设计/" itemprop="url" rel="index">
-                    <span itemprop="name">EMC 与 热设计</span>
+                  <a href="/categories/嵌入式软硬件技术基础/硬件/" itemprop="url" rel="index">
+                    <span itemprop="name">硬件</span>
                   </a>
                 </span>
 
@@ -383,8 +401,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hardware/EMC-与-热设计/EMC／EMI/" itemprop="url" rel="index">
-                    <span itemprop="name">EMC／EMI</span>
+                  <a href="/categories/嵌入式软硬件技术基础/硬件/处理器/" itemprop="url" rel="index">
+                    <span itemprop="name">处理器</span>
                   </a>
                 </span>
 
@@ -401,8 +419,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/11/02/hardwareEMC_1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/02/hardwareEMC_1/" itemprop="commentCount"></span>
+                <a href="/2020/01/18/ Embed system_hardware_soc_sip_concept /#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/18/ Embed system_hardware_soc_sip_concept /" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -429,7 +447,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.7k
+                  4.9k
                 </span>
               
 
@@ -445,7 +463,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  9
+                  17
                 </span>
               
             </div>
@@ -466,145 +484,203 @@
       
 
       
-        <h3 id="EMI-（-电磁干扰-Electromagnetic-Interference"><a href="#EMI-（-电磁干扰-Electromagnetic-Interference" class="headerlink" title="EMI （ 电磁干扰  Electromagnetic Interference )"></a>EMI （ 电磁干扰  Electromagnetic Interference )</h3><p>电磁干扰，是指电子设备自身工作过程中，产生的电磁波，对外发射，从而对设备其它部分或外部其它设备造成干扰。例如，TV荧光屏上常见的“雪花”，便表示接受到的讯号被干扰。</p>
-<h3 id="EMC-Electromagnetic-Compatibility"><a href="#EMC-Electromagnetic-Compatibility" class="headerlink" title="EMC ( Electromagnetic Compatibility )"></a>EMC ( Electromagnetic Compatibility )</h3><p>电磁兼容（EMC），指的是对电子产品在电磁场方面干扰大小（EMI）和抗干扰能力（EMS）的综合评定，是产品质量最重要的指标之一，电磁兼容的测量由测试场地和测试仪器组成。EMC测试目的是检测电器产品所产生的电磁辐射对人体、公共场所电网以及其他正常工作之电器产品的影响。</p>
-<h3 id="EMS（Electro-Magnetic-Susceptibility）"><a href="#EMS（Electro-Magnetic-Susceptibility）" class="headerlink" title="EMS（Electro Magnetic Susceptibility）"></a>EMS（Electro Magnetic Susceptibility）</h3><p>电磁敏感度，指由于电磁能量造成性能下降的容易程度。可以将电子设备比喻为人，将电磁能量比做感冒病毒，敏感度就是是否易患感冒。如果不易患感冒，说明免疫力强，也就是英语单词Immunity，即抗电磁干扰性强。</p>
-<p>因为有了EMI，才有了EMC，因为EMS达标，才能实现EMC。</p>
-<h3 id="CCC（3C）—-China-Compulsory-Certification"><a href="#CCC（3C）—-China-Compulsory-Certification" class="headerlink" title="CCC（3C）—　China Compulsory Certification"></a>CCC（3C）—　China Compulsory Certification</h3><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><h4 id="EMC测试构成："><a href="#EMC测试构成：" class="headerlink" title="EMC测试构成："></a>EMC测试构成：</h4><ul>
-<li><p>EMC包含两大项：EMI（干扰）和 EMS(敏感度，抗干扰）</p>
-</li>
-<li><p>EMI测试项包括：</p>
+        <h3 id="CPU-central-processing-unit"><a href="#CPU-central-processing-unit" class="headerlink" title="CPU central processing unit"></a>CPU central processing unit</h3><p>CPU 是计算系统的运算和控制核心，主要由运算器、控制器和寄存器及实现它们之间联系的数据、控制和地址总线构成。CPU 的工作就是单纯进行数据的计算，至于数据从哪里采集，如何存放等，是不在它的负责范围之内。其核心模块为运算器和控制器。</p>
 <ul>
-<li>1 RE（辐射，发射）</li>
-<li>2 CE(传导干扰）</li>
-<li>3 Harmonic（谐波）</li>
-<li>4 Flicker (闪烁)</li>
+<li><h5 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h5>运算器是指计算机中进行各种算术和逻辑运算操作的部件， 其中算术逻辑单元是中央处理核心的部分。</li>
+<li><h5 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h5>控制器由程序状态寄存器PSR，系统状态寄存器SSR， 程序计数器PG，指令均存器等组成，其作为“决策机构”，主要任务就是发布命令，发挥着整个计算机系统操作的协调与指挥作用。 控制的分类主要包括两种，分别为组合逻辑控制器、微程序控制器。</li>
 </ul>
-</li>
-<li><p>EMS测试项包括</p>
+<p><strong>Intel CPU 实物图</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7sNzgVWDSQH1whLg4DChd5W.DnzyAqFPH6r8CpSsZmYapRvHzRT9UOIVXs3DUD6QxFbSYib3uOdGQ7Txenb9CKc!/b&bo=tgJuAbYCbgEDCSw!&rf=viewer_4"></p>
+<p>了解 CPU 的基本组成和作用，我们还需要简单解释几个概念,因为目前主流 CPU 通常是基于指令集架构来区分的。</p>
 <ul>
-<li>1 ESD（静电）</li>
-<li>2 EFT（瞬态脉冲干扰）</li>
-<li>3 DIP(电压跌落）</li>
-<li>4 CS（传导抗干扰）</li>
-<li>5 RS（辐射抗干扰）</li>
-<li>6 Surge（浪涌，雷击）</li>
-<li>7 PFM(工频磁场抗扰度）</li>
+<li>计算机指令：就是指挥机器工作的指示和命令，程序就是一系列按一定顺序排列的指令，执行程序的过程就是计算机的工作过程。</li>
 </ul>
-</li>
-</ul>
-<h3 id="电磁干扰要素"><a href="#电磁干扰要素" class="headerlink" title="电磁干扰要素"></a>电磁干扰要素</h3><p>电磁干扰发生的三个基本条件</p>
+<p><strong>ARM 指令示例———两个寄存器相加操作</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7j3fskssuko5iHVvZFj2XJXNZ83xSLZ5q.QtjggB1KrhoWINpbKQT43z5ibbreF90XUVKIH0TIrXb8fcPlxjcbM!/b&bo=3gLmAd4C5gEDCSw!&rf=viewer_4"></p>
 <ul>
-<li>电磁干扰源 </li>
-<li>干扰传播途径（或传输通道）</li>
-<li>敏感设备(被干扰对象)</li>
+<li>指令集：CPU中用来计算和控制计算机系统的一套指令的集合，每个CPU在设计时就规定了一系列与其他硬件电路相配合的指令系统。而指令集的先进与否，也关系到CPU的性能发挥</li>
 </ul>
-<h4 id="电磁干扰源分类"><a href="#电磁干扰源分类" class="headerlink" title="电磁干扰源分类"></a>电磁干扰源分类</h4><p>电磁干扰源的分类方法很多。</p>
+<p><strong>ARM 指令集示例</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7s2nvSq*I9a3tD4XGSxqUn5Qqq7nEpKFaG9DElOhdVUosCa.NdEOaFGmsYIJIqOjW8JAdeFIwI28XxrNcseQMzY!/b&bo=xAPPAcQDzwEDCSw!&rf=viewer_4"></p>
+<p>目前主流指令集架构（Instruction Set Architecture）有如下两类</p>
 <ul>
-<li><h4 id="一般分类"><a href="#一般分类" class="headerlink" title="一般分类"></a>一般分类</h4><ul>
-<li>自然干扰源<br>主要来源于大气层的天电噪声、地球外层空间的宇宙噪声。他们既是地球电磁环境的基本要素组成部分，同时又是对无线电通讯和空间技术造成干扰的干扰源。自然噪声会对人造卫星和宇宙飞船的运行产生干扰，也会对弹道导弹运载火箭的发射产生干扰。</li>
-<li>人为干扰源<br>是有机电或其他人工装置产生电磁能量干扰，其中一部分是专门用来发射电磁能量的装置，如广播、电视、通信、雷达和导航等无线电设备，称为有意发射干扰源。另一部分是在完成自身功能的同时附带产生电磁能量的发射，如交通车辆、架空输电线、照明器具、电动机械、家用电器以及工业、医用射频设备等等。因此这部分又成为无意发射干扰源。</li>
+<li>复杂指令集运算（Complex Instruction Set Computing，CISC）<ul>
+<li>CISC在微指令集的每个小指令可以执行一些较低阶的硬件操作，指令数目多而且复杂， 每条指令的长度并不相同。因为指令执行较为复杂所以每条指令花费的时间较长， 但每条个别指令可以处理的工作较为丰富。</li>
+<li>常见的CISC微指令集CPU主要有AMD、Intel、VIA 等x86 架构的CPU。</li>
 </ul>
 </li>
-<li><h4 id="按电磁干扰属性来分，"><a href="#按电磁干扰属性来分，" class="headerlink" title="按电磁干扰属性来分，"></a>按电磁干扰属性来分，</h4><ul>
-<li>功能性干扰源系：设备实现功能过程中造成对其他设备的直接干扰</li>
-<li>非功能性干扰源：用电装置在实现自身功能的同时伴随产生或附加产生的副作用，如开关闭合或切断产生的电弧放电干扰。</li>
 </ul>
-</li>
-<li><h4 id="按电磁干扰信号频谱宽度："><a href="#按电磁干扰信号频谱宽度：" class="headerlink" title="按电磁干扰信号频谱宽度："></a>按电磁干扰信号频谱宽度：</h4><p>相对于指定感受器的带宽大或小来加以区别</p>
 <ul>
-<li>宽带干扰源：干扰信号的带宽大于指定感受器带宽。</li>
-<li>窄带干扰源：干扰信号的带宽小于于指定感受器带宽。</li>
-</ul>
-</li>
-<li><h4 id="从干扰信号的频率范围来分"><a href="#从干扰信号的频率范围来分" class="headerlink" title="从干扰信号的频率范围来分"></a>从干扰信号的频率范围来分</h4><ul>
-<li>工频与音频干扰源（50Hz及其谐波）</li>
-<li>甚低频干扰源（30Hz以下）</li>
-<li>载频干扰源（10kHz~300kHz）</li>
-<li>射频及视频干扰源（300kHz）</li>
-<li>微波干扰源（300MHz~100GHz）</li>
+<li>精简指令集运算（Reduced Instruction Set Computing，RISC）<ul>
+<li>RISC的基本出发点就是通过精减机器指令系统来减少硬件设计的复杂程度，提高指令执行速度，在RISC中，计算机实际上每一个机器周期里都执行指令，无论简单或复杂的操作，均由简单指令的程序块完成，具有较强的仿真能力。</li>
+<li>ARM、MIPS 、Power、C6000 都是RISC 指令体系的指令集。ARM 主要用在手机中。Power 是IBM 用于服务器上的处理器。C6000 是数字信号处理器，广泛用于视频处理。而MIPS 虽然本身很优秀，但其在各领域起步都较晚，并没有广泛应用的领域。目前有UNIX，Linux，MacOS等操作系统运行在RISC处理器上。</li>
 </ul>
 </li>
 </ul>
-<h4 id="电磁干扰传播途径"><a href="#电磁干扰传播途径" class="headerlink" title="电磁干扰传播途径"></a>电磁干扰传播途径</h4><p>电磁干扰传播途径一般也分为两种：即传导耦合方式和辐射耦合方式。</p>
+<p>有了指令集的定义和分类概念，可以帮助理解 CPU 种类和工作流程，文末有链接关于两种主流指令集的具体百科解释。</p>
+<p><strong>CPU Work Flow &gt;&gt;&gt;&gt;&gt;</strong></p>
+<ol>
+<li>控制器根据用户预先编好的程序，依次从存储器中取出各条指令，放在指令寄存器IR中，</li>
+<li>通过指令译码(分析)确定应该进行什么操作，然后通过操作控制器OC，按确定的时序，向相应的部件发出微操作控制信号。</li>
+<li>操作控制器OC中主要包括节拍脉冲发生器、控制矩阵、时钟脉冲发生器、复位电路和启停电路等控制逻辑</li>
+</ol>
+<p>可简化为：取指 fetch ——&gt;解码 decode ——&gt;执行 execute ——&gt;写回 write back<br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7vBTuuRQZQtH3kb1ia1FOey0qWLEnadeGfe2h5F*T*gZkQovsfzYa3iC9WbR6AfeB45YMX*TjQgoCIS9oIUxFxk!/b&bo=wQNJAsEDSQIDGTw!&rf=viewer_4"></p>
+<p>CPU 的外部端口都会有地址总线和数据总线，我们选择一种总线，把 CPU 和这些外围迄器件连接起来，让 CPU 可以和这些器件进行通信，完成数据的输入,运算处理，输出。这样就变成了一个具有实际意义的计算机系统系统了。</p>
+<p>计算机系统主要由五大部件组成：</p>
+<ol>
+<li>存储器：用来存放数据和程序</li>
+<li>运算器：运行算数运算和逻辑运算，并将中间结果暂存到运算器中</li>
+<li>控制器：用来控制和指挥程序和数据的输入运行，以及处理运算结果</li>
+<li>输入设备：将人们熟悉的信息形式转换为机器能够识别的信息形式，常见的有键盘，鼠标等</li>
+<li>输出设备：将机器运算结果转换为人们熟悉的信息形式，如打印机输出，显示器输出等</li>
+</ol>
+<p>基于计算机系统中程序指令存储器和数据存储器之间的关系，有两种体系结构</p>
 <ul>
-<li><h4 id="传导传输"><a href="#传导传输" class="headerlink" title="传导传输"></a>传导传输</h4><p>干扰源和敏感器之间有完整的电路连接，干扰信号沿着这个连接电路传递到敏感器，发生干扰现象。传输电路包括</p>
+<li><strong>1 冯诺伊曼结构</strong><br>冯·诺依曼结构，是一种将程序指令存储器和数据存储器合并在一起的存储器结构。取指令和取操作数都在同一总线上，通过分时复用的方式进行；缺点是在高速运行时，不能达到同时取指令和取操作数，从而形成了传输过程的瓶颈。由于程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置，因此程序指令和数据的宽度相同，如英特尔公司的8086中央处理器的程序指令和数据都是16位宽。<img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7qioa4JC4JyLSD0t5bsr9233sRL98mjBkKdXYLL2ec9Kch5QBNGiEEZBfAsatx0eqlYVeMtQ4rOR7J0DjxnzS.0!/b&bo=mwNfAZsDXwEDGTw!&rf=viewer_4">
+
+
+</li>
+</ul>
 <ul>
-<li>1 导线</li>
-<li>2 设备的导电构件</li>
-<li>3 供电电源</li>
-<li>4 公共阻抗</li>
-<li>5 接地平板</li>
-<li>6 电阻</li>
-<li>7 电感</li>
-<li>8 电容</li>
-<li>9 互感元件等。</li>
+<li><strong>2 哈弗结构</strong><br>哈佛结构，是一种存储器并行体系结构，主要特点是将程序和数据存储在不同的存储空间中，即程序存储器和数据存储器是两个独立的存储器，每个存储器独立编址、独立访问。CPU首先到程序指令存储器中读取程序指令内容，解码后得到数据地址，再到相应的数据存储器中读取数据，并进行下一步的操作。程序指令存储和数据存储分开，程序指令储存和数据储存分开，数据和指令的储存可以同时进行，提高了数据吞吐率，缺点是结构复杂。</li>
 </ul>
-</li>
-<li><h4 id="辐射传输"><a href="#辐射传输" class="headerlink" title="辐射传输"></a>辐射传输</h4><p>通过介质以电磁波的形式传播，干扰能量按电磁场的规律向周围空间发射。<br>常见的辐射耦合有三种：</p>
+<img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7kHcg*.B7XyfAcJf7XYhh88ThWR3zPkjNY.RfulZd*NE6XMkV0YFdjm3O.atSM448KpvQcNvNeDsifQXs8nha8Q!/b&bo=mAM7AZgDOwEDCSw!&rf=viewer_4">
+
+
+<h3 id="MCU-微控制单元（-Micro-controller-Unit-）"><a href="#MCU-微控制单元（-Micro-controller-Unit-）" class="headerlink" title="MCU 微控制单元（ Micro controller Unit ）"></a>MCU 微控制单元（ Micro controller Unit ）</h3><p>将计算机运行所需要的一些资源（如CPU、ROM、RAM、I/O、定时器、USB、ADC、DAC等）集成到了一个芯片上，称之为单片微型计算机（Single Chip）</p>
+<p><strong>MCU Block —— 从 block 中可以明显看出 CPU 和 MCU 的关系</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7hGwyHO8Ea75ITkhJYr1qQ2mBHBloAFWbtccQam2tmCUz80h.avN7OaxPGovbuy4ms72GC3XiFfkKOcCejfxsJM!/b&bo=rQJwAa0CcAEDCSw!&rf=viewer_4"></p>
+<p>一般地，MCU基本组成由以下部件组成：</p>
 <ul>
-<li>1 甲天线发射的电磁波被乙天线意外接受，称为天线对天线耦合；</li>
-<li>2 空间电磁场经导线感应而耦合，称为场对线的耦合；</li>
-<li>3 两根平行导线之间的高频信号感应，称为线对线的感应耦合。</li>
+<li>CPU -  MCU的核心部件，包括运算器和控制器两个主要部分</li>
+<li>存储器 - 用于存储程序和数据</li>
+<li>中断控制器 - 暂停执行当前的任务而出来其他的事件，处理完成后，返回中断处继续执行</li>
+<li>输入/输出端口 - 连接或驱动不同的设备，如LED等</li>
+<li>串行通信端口 - MCU和不同外设之间进行数据交换，如UART、SPI等</li>
+<li>定时器/计数器 - 脉冲计数和定时</li>
 </ul>
-</li>
-</ul>
-<p>实际工程中，设备之间发生干扰通常包含着许多种途径的耦合。正因为多种途径的耦合同时存在，反复交叉耦合，共同产生干扰，使电磁干扰变得难以控制。</p>
-<h4 id="敏感设备"><a href="#敏感设备" class="headerlink" title="敏感设备"></a>敏感设备</h4><p>敏感设备是对被干扰对象的总称。可以是一个很小的元件或一个电路板组件，也可以是一个单独的用电设备甚至可以是一个大型系统。</p>
-<h3 id="一般原则"><a href="#一般原则" class="headerlink" title="一般原则"></a>一般原则</h3><ul>
-<li><p>1 EMC费效比关系规律：EMC问题越早考虑、越早解决，费用越小、效果越好。<br>在功能设计的同时进行EMC设计，到样板、样机完成则通过EMC测试，是最省时间和最有经济效益的。相反，产品研发阶段不考虑EMC，投产以后发现EMC不合格才进行改进，非但技术上带来很大难度、而且返工必然带来费用和时间的大大浪费，甚至由于涉及到结构设计、PCB设计的缺陷，无法实施改进措施，导致产品不能上市。</p>
-</li>
-<li><p>2 高频电流环路面积S越大,EMI辐射越严重。<br>当频率较高时，一般走线电抗大于电阻，连线对高频信号就是电感，串联电感引起辐射。电磁辐射大多是EUT被测设备上的高频电流环路产生的，最恶劣的情况就是开路之天线形式。对应处理方法减小高频电流回路面积，尽量消除任何非正常工作需要的天线，</p>
-</li>
-<li><p>环路电流频率f越高，引起的EMI辐射越严重<br>电磁辐射场强随电流频率f的平方成正比增大。减少辐射骚扰或提高射频辐射抗干扰能力的重要途径，减小骚扰源高频电流频率f，即减小干扰电磁波的频率f。</p>
-</li>
-</ul>
-<h3 id="EMC-仿真工具"><a href="#EMC-仿真工具" class="headerlink" title="EMC 仿真工具"></a>EMC 仿真工具</h3><h3 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h3><h4 id="3C-认证流程编辑"><a href="#3C-认证流程编辑" class="headerlink" title="3C 认证流程编辑"></a>3C 认证流程编辑</h4><p>CCC 认证申请分书面申请和网上申请。申请书含申请人、制造商、生产厂和产品的有关信息。每种型号单元的商品应单独申请。同一种型号不同生产厂家的商品也应单独申请。</p>
+<p>常见MCU外设有以下：</p>
 <ul>
-<li><h4 id="阶段1-申请受理"><a href="#阶段1-申请受理" class="headerlink" title="阶段1 申请受理"></a>阶段1 申请受理</h4><ul>
-<li>收到符合要求的申请后，认证机构向申请人发出受理通知，通知申请人发送或寄送有关文件和资料。同时，认证机构发送有关收费和通知。</li>
-<li>申请人按要求将资料提供到认证机构。申请人付费后，按要求填写付款凭证。 [注：企业一般应提供以下资料：总装图、电气原理图、线路图等；关键元器件和/或主要原材料清单；同一申请单元内各个型号产品之间的差异说明；其他需要的文件；CB证书及报告]。</li>
+<li>GPIO - General Purpose Input Output，通用输入输出，</li>
+<li>ADC - Analog to Digital Converter,模数转换器</li>
+<li>DAC - Digital to analog converter,数字模拟转换器</li>
+<li>USB - Universal Serial Bus,通用串行总线</li>
+<li>CAN - Controller Area Network,控制器局域网络</li>
+<li>ETHERNET - 以太网</li>
+<li>SPI - Serial Peripheral Interface,串行外设接口</li>
+<li>UART - Universal Asynchronous Receiver Transmitter,通用异步收发传输器</li>
+<li>USART - Universal Synchronous Asynchronous Receiver Transmitter，通用同步异步串行接收发送器</li>
+<li>I2C - Inter-Integrated Circuit，集成电路总线</li>
+<li>EEPROM - Electrically Erasable Programmable Read Only Memory，电可擦可编程只读存储器</li>
+<li>Comparator - 比较器  * Operational Amplifier - 运算放大器</li>
+<li>I2S - Inter—IC Sound,集成电路内置音频。飞利浦公司为数字音频设备之间的音频数据传输而制定的一种总线标准，该总线专门用于音频设备之间的数据传输，广泛应用于各种多媒体系统。</li>
 </ul>
+<h5 id="MCU-主要厂商"><a href="#MCU-主要厂商" class="headerlink" title="MCU 主要厂商"></a>MCU 主要厂商</h5><ul>
+<li><p>1、NXP<br>NXP(恩智浦)公司传统的MCU是基于80C51内核的MCU，嵌入了掉电检测、模拟以及片内RC振荡器等功能，这使51LPC在高集成度、低成本、低功耗的应用设计中可以满足多方面的性能要求。在2015年，恩智浦75%的MCU营收是来自用在智能卡的8位和16位MCU。<br>收购飞思卡尔之后，NXP从2015年全球第六大MCU供应商来到了榜首的位置，市场份额也高达19%，营收额达到29亿美元。在收购了飞思卡尔之后，NXP的MCU转向32位MCU的的嵌入式控制应用，汽车电子领域更是其重点领域。NXP和飞思卡尔都开发了大量32位的ARM Cortex-M MCU。</p>
 </li>
-<li><h4 id="阶段2-资料审查"><a href="#阶段2-资料审查" class="headerlink" title="阶段2 资料审查"></a>阶段2 资料审查</h4><ul>
-<li>在资料审查阶段，产品认证工程师需对申请进行单元划分。 </li>
-<li>单元划分后，若需要进行样品测试，产品认证工程师向申请人发送送样通知以及相应的付费通知，同时，通知申请人向相应的检测机构发送样品接收通知。</li>
-</ul>
+<li><p>2、Renesas<br>2003年4月1日，日立与三菱电机之间进行业务重组，成立了瑞萨科技。2010年瑞萨科技又与NEC整合，成立了新的瑞萨电子。新生的瑞萨电子以强大的研发实力，设计开发平台、多种制造技术为基础，积极推动和加强MCU、系统LSI、模拟及功率半导体器件三大产品领域的发展。</p>
 </li>
-<li><h4 id="阶段3-样品接收"><a href="#阶段3-样品接收" class="headerlink" title="阶段3 样品接收"></a>阶段3 样品接收</h4><ul>
-<li>样品由申请人直接送达指定的检测机构。·申请人付费后，按照要求填写付款凭证。 </li>
-<li>检测机构对收取的样品进行验收，填写样品验收报告，对于不合格的样品将出具样品整改通知，整改后填写样品验收报告。 </li>
-<li>样品验收后，检测机构填写样品检测进度表报认证机构。 </li>
-<li>认证机构收到样品检测进度后，在确认申请人相关费用付清后，向申请人发出正式受理通知，向检测机构发出检测任务书，样品测试正式开始。</li>
-</ul>
+<li><p>3、Microchip (收购Atmel)<br>全球领先的单片机和模拟半导体供应商。2006到2009年占据第一。2016年1月19日，Microchip从Dialog那里抢婚成功，宣布成功收购Atmel，总值达35.6亿美元。<br>成功收购Atmel的Microchip在短短不到两个月的时间内就又爬升至MCU市场第三的位置。</p>
 </li>
-<li><h4 id="阶段4-样品检测"><a href="#阶段4-样品检测" class="headerlink" title="阶段4 样品检测"></a>阶段4 样品检测</h4><ul>
-<li>企业在型式试验阶段应作的工作为：送试验样品、需要的零部件及技术资料，了解试验进度，如果出现不合格项要依照样品测试整改通知进行及时整改。 </li>
-<li>样品测试结束后，检测机构填写样品测试结果通知。·检测机构还将试验报告等资料传送至认证机构。</li>
-</ul>
+<li><p>4、Samsung<br>三星2016年MCU市场份额12%，位居第四。三星有KS51和KS57系列4位MCU，KS86和KS88系列8位MCU，KS17系列16位MCU和KS32系列32位MCU。三星MCU为OTP型ISP在片编程功能。在4位机上采用NEC的技术，8位机上引进Zilog公司Z8的技术，在32位机上购买了ARM7内核，还有DEC的技术、东芝的技术等。其单片机裸片的价格相当有竞争力。</p>
 </li>
-<li><h4 id="阶段5-工厂审查"><a href="#阶段5-工厂审查" class="headerlink" title="阶段5 工厂审查"></a>阶段5 工厂审查</h4><ul>
-<li>对于需要进行工厂审查的申请，检测机构组织进行工厂审查。 </li>
-<li>工厂检查的前期准备包括：与认证机构商定工厂检查的日期和人员；按照工厂检查的要求准备好文件和记录；在工厂检查时安排生产线开动。 </li>
-<li>企业要严格按照工厂检查的要求配合工厂检查组的工作。根据确认的不符合项和工厂检查结论，尽快完成不符合项的整改。</li>
-</ul>
+<li><p>5、ST<br>1988年6月成立，是由意大利的SGS微电子公司和法国Thomson半导体公司合并而成。1998年5月，SGS-THOMSON Microelectronics将公司名称改为意法半导体有限公司。意法半导体是全球微电子应用领域内开发及提供半导体解决方案的领导者，STM32系列ARM Cortex-M 单片机，更是占据了行业半壁江山。</p>
 </li>
-<li><h4 id="阶段6-合格评定"><a href="#阶段6-合格评定" class="headerlink" title="阶段6 合格评定"></a>阶段6 合格评定</h4><p>产品认证工程师对各阶段的结果进行收集整理后，进行初评。·合格评定人员对以上结果进行复评。</p>
+<li><p>6、Infineon<br>为数不多的能全面涵盖汽车领域最重要应用的汽车半导体制造商之一。<br>1999年4月成立于德国慕尼黑，前身是西门子集团的半导体部门，于1999年独立，2000年上市。拥有广博的产品组合，包括微控制器、智能传感器、射频收发IC、雷达以及分立式和集成式功率半导体。MCU在汽车电子，工控、医疗领域非常知名。</p>
 </li>
-<li><h4 id="阶段7-证书领取"><a href="#阶段7-证书领取" class="headerlink" title="阶段7 证书领取"></a>阶段7 证书领取</h4><ul>
-<li>认证机构主任签发证书，申请人打印领证凭条，到认证机构自取或要求寄送证书。</li>
-</ul>
+<li><p>7、TI<br>一家全球性半导体设计与制造公司， 业务覆盖超过 35 个国家，服务全球各地超过 10 万家客户，拥有 85 年的创新历史，超过 10 万种模拟集成电路、嵌入式处理器以及软件和工具，业界最大的销售和支持团队。<br>TI的MSP320曾经是风靡一时的数字集成电路，后来随着公司的转型，MCU开始下滑。如今，随着新产品的推出，TI的MCU又有卷土重来的势头。</p>
+</li>
+<li><p>8、Cypress+Spansion<br>Cypress1982年成立，公司生产高性能IC产品，用于数据传输、远程通讯、PC和军用系统，在纽约股票交易所上市。2015年3月12日，赛普拉斯半导体公司和飞索半导体(Spansion)公司宣布，两家公司价值50亿美元的全股票免税合并交易已告完成。此项合并诞生了营业额20亿美元的全球MCU及嵌入式系统专用存储器市场领导者，汽车用MCU及存储器排名第三。</p>
 </li>
 </ul>
-<p><strong>获证后的监督</strong></p>
+<h3 id="SoC（System-on-Chip-）"><a href="#SoC（System-on-Chip-）" class="headerlink" title="SoC（System on Chip ）"></a>SoC（System on Chip ）</h3><p>系统级芯片.从物理结构上来看，就是一个芯片内除了CPU外，还集成了很多功能模块的部件，不同的功能模块由可设计重用的 IP核 实现。</p>
+<p>SOC 的应用优势</p>
 <ul>
-<li>如果生产的产品与型式试验的样品不一致，应得到认证机构的确认后再生产。</li>
-<li>要与认证机构商定正常监督的日期。在监督时，生产线应正常生产，并有认证的产品在工厂或能提供一定量的产品供抽样</li>
-<li>准备好监督所要求的文件和记录。</li>
-<li>确认不符合项和监督结论。·尽快完成不符合项的整改。</li>
+<li>低功耗</li>
+<li>减少体积</li>
+<li>增加系统功能</li>
+<li>提高速度</li>
+<li>缩短开发周期，节省成本</li>
 </ul>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://www.keysight.com/main/application.jspx?cc=CN&lc=chi&nid=-34812.0&pageMode=RLP" target="_blank" rel="noopener">Keysight EMC Solution</a></p>
-<p><a href="https://baike.baidu.com/item/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9%E6%80%A7/450222?fromtitle=emc&fromid=32109" target="_blank" rel="noopener">电磁兼容性</a><br><a href="https://baike.baidu.com/item/3c/88057?fr=aladdin" target="_blank" rel="noopener">3C 中国强制性产品认证</a></p>
+<p><strong>基于 ARM7 内核的 SOC实物图</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7tvnDKld4TGQEl1BI0VbEOWPSlNNjd.LkvNi0vzrmnzLaNaK0ugjKi9bbp9bt6yR2wbxFrMprYYwiuz877xMhNU!/b&bo=IwMbAiMDGwIDCSw!&rf=viewer_4"></p>
+<p><strong>基于 ARM7 内核的 SOC 逻辑 Block</strong><br>Block 图比较直观的呈现了 SOC 的结构，每个方框即表示一个 IP 核实现的功能模块<br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7jy3rul.Wabu6eP3y2xOEMsjB3sPSd2LpAmvQCOhQ6zRb8OXAtZmyIoUKhEAyiN3*oAXKvUA9axQYiqo075y4Fs!/b&bo=*AJuA*wCbgMDORw!&rf=viewer_4"></p>
+<p>这里再补课下 IP 核的概念</p>
+<ul>
+<li><h5 id="IP核（Intellectual-Property-core）"><a href="#IP核（Intellectual-Property-core）" class="headerlink" title="IP核（Intellectual Property core）"></a>IP核（Intellectual Property core）</h5>即知识产权核。是一段具有特定电路功能的硬件描述语言程序，该程序通常与集成电路工艺无关，可以移植到不同的半导体工艺中去生产集成电路芯片。由于IP核将一些在数字电路中常用，但比较复杂的功能块设计成可修改参数的模块，因此FPGA的设计人员可以通过调用相关IP核来完成所需逻辑功能，从而节省了大量的开发时间，避免重复劳动</li>
+</ul>
+<p>大部分IP核都是需要付费的，例如RS编码器、FIR滤波器、SDRAM控制器、PCI接口等。不过也有很多免费的IP核资源，如FIFO模块，PLL模块等。</p>
+<p>按IP核的硬件描述级实现程序，可将它分为三类：软核、硬核和固核。</p>
+<p>可以类比于程序里的库去理解，但本质上差别还是比较大的。对于上过小学的人，该怎么理解 IP 核？那时候大家弄有个好词佳句本，平时摘录整理，当自己在写作文的时候就可以直接拿来引用。</p>
+<p><strong>全加器的逻辑实现图</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7q9cPIzObh7aa7xVPqYLS0Bimzeh1bSP9KyrGLx3QBTBkhUIbCy9fCkoE1HeSg9UcQA2macCCwDpKqV.LPp2PXk!/b&bo=CgRfAQoEXwEDGTw!&rf=viewer_4"></p>
+<p><strong>全加器的 VHDL 代码实现</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7pytULpYdT6k6tkzxIxXwyiIxEGCEWdv.mkw4ylKVrraZVaZcX64ancR1AdvEOBBVvgtA8DjN*uROiIArp8uEHc!/b&bo=SgNYAkoDWAIDGTw!&rf=viewer_4"></p>
+<h3 id="SIP-System-In-Package"><a href="#SIP-System-In-Package" class="headerlink" title="SIP System In Package"></a>SIP System In Package</h3><p>说明 SIP 之前，需要先有几个概念</p>
+<h5 id="1-裸片-die"><a href="#1-裸片-die" class="headerlink" title="1. 裸片 die"></a>1. 裸片 die</h5><ul>
+<li>裸片（die）是在foundry生产出来的芯片，即是晶圆经过切割测试后没有经过封装的芯片，这种裸片上只有用于封装的压焊点（pad），是不能直接应用于实际电路当中的。</li>
+<li>裸片极易受外部环境的温度、杂质和物理作用力的影响，很容易遭到破坏，所以必须封入一个密闭空间内，引出相应的引脚，才能作为一个基本的元器件使用，即为封装。</li>
+</ul>
+<h5 id="2-Package-封装。"><a href="#2-Package-封装。" class="headerlink" title="2. Package 封装。"></a>2. Package 封装。</h5><p>单片IC在从晶圆上切割下来后的保护性外壳及相关附件,作用如下：</p>
+<ul>
+<li><ol>
+<li>保护硅片。因为硅芯片非常的脆弱，即使是非常细小的灰尘或者水滴都可以破坏它们的功能，所以需要将IC芯片封装来进行保护。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>进行尺度的放大.芯片本身通常很小，通过封装后尺度放大，便于后续PCB板级系统使用。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>电气连接，通过封装，芯片和外界进行信息的交换。</li>
+</ol>
+</li>
+</ul>
+<h5 id="封装材料"><a href="#封装材料" class="headerlink" title="封装材料"></a>封装材料</h5><p>封装产品按工艺或材料通常分为：塑料封装、陶瓷封装和金属封装</p>
+<ul>
+<li>塑料封装通常称为塑封，主要应用于商业级产品，具有低成本优势，但在芯片散热、稳定性、气密性方面相对较差。</li>
+<li>陶瓷封装和金属封装则多用于工业级产品以及航空航天、军工等领域，其散热优良，气密性好、可靠性高。同时，陶瓷和金属封装具有可拆解的优势，便于故障查找和问题“归零”。图1-1所示为三种不同工艺材料的封装。</li>
+</ul>
+<hr>
+<p>SiP（System in Package）系统级封装，将不同技术、工艺和材料制作的裸芯片封装到一起，包括处理器、存储器等功能芯片集成在一个封装内，从而实现一个基本完整的功能。也可将置于基板上的被动无源元件，内埋于多层结构的基板中，以节省表面使用空间，达到缩小体积的目标。简单来说就是。SIP 是一个封装内包含了多个独立的芯片</p>
+<p><strong>基于 裸 die level 的 SIP</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7tcaCxDDAa2QXEmi7M8ZffO.sqeJBar.6Y*oZp7Sw*.VvJgUHAUwaRedeyPZu4heTCclB*DNDowwAjxtVN6qOcY!/b&bo=0wTBAdMEwQEDORw!&rf=viewer_4"></p>
+<p><strong>基于 IC level 的 SIP</strong><br><img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7vu5vgMgpSg8fTZL6JXQVUE6UsDavd03zDXnrAlBcnzYqO8voWLG9htzYS1dUaulgr0OCsqu*iLYH4jNG.0fwlE!/b&bo=BwOnAQcDpwEDCSw!&rf=viewer_4"></p>
+<h5 id="图片来源-《SiP系统级封装设计与仿真——Mentor-Expedition-Enterprise-Flow高级应用指南》"><a href="#图片来源-《SiP系统级封装设计与仿真——Mentor-Expedition-Enterprise-Flow高级应用指南》" class="headerlink" title="图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》"></a>图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》</h5><hr>
+<h4 id="常见的-SIP-堆叠方式"><a href="#常见的-SIP-堆叠方式" class="headerlink" title="常见的 SIP 堆叠方式"></a>常见的 SIP 堆叠方式</h4><ul>
+<li><p>1．芯片堆叠技术常见的芯片堆叠（Stacked Dies）<br>把两个或两个以上的芯片在垂直方向上堆叠，并利用传统的引线键合方式进行互连，然后再进行封装。堆叠方式通常有3种。</p>
+<ul>
+<li><ol>
+<li>金字塔型，即用大小不同的芯片，上层芯片的面积要小于下层，这样下层芯片表面就有足够的面积和空间用来进行引线键合。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>悬臂梁式的堆叠封装，一般用于大小差别不大的芯片，通过在上下层芯片之间加入一层垫片以便于下层芯片的引线键合，垫片通常是一块面积比上下层芯片小的普通硅片或其他的材质。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>堆叠方式是芯片并排堆叠，即在一块比较大的芯片上并排堆叠出多片比较小的芯片<img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7pww6ODvw8bqI7Kgk8rZdsLyKz9bJ2cYOs3kgtTDaA1HcAY5KH7nlBPR6i.ihw4B6SYSP9EPM7gyrs0Kv2MA.EM!/b&bo=HgPOAB4DzgADGTw!&rf=viewer_4">
+##### 图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>2．埋置元器件技术<br>埋置元器件是指将元器件集成在基板上或者埋置到基板内部。对于IC芯片，一般要紧贴基板，或是在基板上先开腔体，将IC芯片嵌入，用环氧树脂固定后与基板平面平齐，然后实施多层布线，最上层再安装其余元器件。电阻和电容等无源元件一般可随多层布线用厚、薄膜法集成到基板表层或者埋置于多层基板中。</p>
+<img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7vdNVUCfPVvwvFQV8oQNbMMsSXTKEmibd.lAjCqWC96RLAQ7D0pCxh0rjdQ0e48znQB5nVkCXuNL*E4omKeFre0!/b&bo=HQOmAR0DpgEDCSw!&rf=viewer_4">
+##### 图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》
+</li>
+<li><p>3.IPD（Integrated Passive Device）<br>芯片是整个电子系统的处理核心，但实际上占据系统大部分面积的是各种无源元件。为了提升无源元件的集成度、进一步缩小体积，一方面，埋置器件技术大力发展；另一方面，无源元件制造商从半导体业获得了灵感，它们正在改变其传统的分立器件供应商形象，转向生产高集成度模块，也就是在硅片或者陶瓷基板上集成无源元件IPD，以满足便携式计算机和移动通信设备对于减小体积、提高性能、降低成本的要求</p>
+<img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7saywcpkOvQRv22wKvZV9AeHQujxbuSHcVUzhvBrtE9afh0twVDSU05AIXRPe.tjqLqkDcsCZbTeoD5sbrdgSh8!/b&bo=mAIvAZgCLwEDGTw!&rf=viewer_4">
+##### 图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》
+
+
+</li>
+</ul>
+<ul>
+<li>4.TSV 硅通孔（Through -Silicon-Via）<br>硅通孔技术是通过在芯片和芯片之间、晶圆和晶圆之间制作垂直导通，实现芯片之间互连的最新技术，如图2-11所示。<img src="http://m.qpic.cn/psc?/V14L5GMC0EQRSI/cQo4ro5OrghVrsvIAVqd7mvQzfcvOvlgQKXNGpJkSBigAshIAh1Fk4OmknlbTPCVgcO3mR73zEgmS6tCzHh0sFzC4iRQp6JPQwlor0Kow7A!/b&bo=iAIKAYgCCgEDGTw!&rf=viewer_4">
+##### 图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》
+
+
+
+
+</li>
+</ul>
+<p><a href="https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/284033?fromtitle=CPU&fromid=120556" target="_blank" rel="noopener">中央处理器</a><br><a href="https://baike.baidu.com/item/%E5%A4%84%E7%90%86%E5%99%A8%E7%BB%93%E6%9E%84/14724193?fr=aladdin" target="_blank" rel="noopener">处理器结构</a><br><a href="https://baike.baidu.com/item/%E5%BE%AE%E5%A4%84%E7%90%86%E5%99%A8/104320" target="_blank" rel="noopener">微处理器</a></p>
+<p><a href="https://baike.baidu.com/item/%E7%B2%BE%E7%AE%80%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/661859?fromtitle=risc&fromid=62696&fr=aladdin" target="_blank" rel="noopener">精简指令集计算机 RISC</a><br><a href="https://baike.baidu.com/item/%E5%A4%8D%E6%9D%82%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/10307148?fromtitle=CISC&fromid=1189443&fr=aladdin" target="_blank" rel="noopener">复杂指令集计算机 CISC</a></p>
+<p><a href="https://baike.baidu.com/item/IP%E6%A0%B8/11003763?fr=aladdin" target="_blank" rel="noopener">IP核</a><br><a href="https://baike.baidu.com/item/soc/1053305?fr=aladdin" target="_blank" rel="noopener">SOC 系统级芯片</a><br><a href="https://www.jianshu.com/p/af2a8ca04dbc" target="_blank" rel="noopener">Soc芯片设计相关知识</a></p>
 
       
     </div>
@@ -631,12 +707,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/11/02/hardwareEMC_1/">EMC／EMI基本概念</a></p>
+  <p><span>本文标题:</span><a href="/2020/01/18/ Embed system_hardware_soc_sip_concept /">CPU MCU SOC 和 SIP 概念解释</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Arvin Yao 的个人博客">Arvin Yao</a></p>
-  <p><span>发布时间:</span>2019年11月02日 - 09:28</p>
-  <p><span>最后更新:</span>2019年11月04日 - 14:22</p>
-  <p><span>原始链接:</span><a href="/2019/11/02/hardwareEMC_1/" title="EMC／EMI基本概念">http://yoursite.com/2019/11/02/hardwareEMC_1/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/11/02/hardwareEMC_1/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2020年01月18日 - 21:44</p>
+  <p><span>最后更新:</span>2020年01月19日 - 16:41</p>
+  <p><span>原始链接:</span><a href="/2020/01/18/ Embed system_hardware_soc_sip_concept /" title="CPU MCU SOC 和 SIP 概念解释">http://yoursite.com/2020/01/18/ Embed system_hardware_soc_sip_concept /</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2020/01/18/ Embed system_hardware_soc_sip_concept /" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -675,9 +751,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hardware/" <i class="fa fa-tag"> Hardware</a>
+            <a href="/tags/Embeded-System-Tech/" <i class="fa fa-tag"> Embeded System Tech</a>
           
-            <a href="/tags/EMI-EMC-3C/" <i class="fa fa-tag"> EMI EMC 3C</a>
+            <a href="/tags/MCU/" <i class="fa fa-tag"> MCU</a>
           
         </div>
       
@@ -705,8 +781,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/26/HardwareDesignChattingBatteryCharging20191105/" rel="next" title="充电概念介绍和分类">
-                <i class="fa fa-chevron-left"></i> 充电概念介绍和分类
+              <a href="/2019/11/02/hardwareEMC_1/" rel="next" title="EMC／EMI基本概念">
+                <i class="fa fa-chevron-left"></i> EMC／EMI基本概念
               </a>
             
           </div>
@@ -714,10 +790,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/01/18/ Embed system_hardware_soc_sip_concept /" rel="prev" title="CPU MCU SOC 和 SIP 概念解释">
-                CPU MCU SOC 和 SIP 概念解释 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -891,7 +963,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#EMI-（-电磁干扰-Electromagnetic-Interference"><span class="nav-number">1.</span> <span class="nav-text">EMI （ 电磁干扰  Electromagnetic Interference )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EMC-Electromagnetic-Compatibility"><span class="nav-number">2.</span> <span class="nav-text">EMC ( Electromagnetic Compatibility )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EMS（Electro-Magnetic-Susceptibility）"><span class="nav-number">3.</span> <span class="nav-text">EMS（Electro Magnetic Susceptibility）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CCC（3C）—-China-Compulsory-Certification"><span class="nav-number">4.</span> <span class="nav-text">CCC（3C）—　China Compulsory Certification</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">5.</span> <span class="nav-text">测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#EMC测试构成："><span class="nav-number">5.1.</span> <span class="nav-text">EMC测试构成：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电磁干扰要素"><span class="nav-number">6.</span> <span class="nav-text">电磁干扰要素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电磁干扰源分类"><span class="nav-number">6.1.</span> <span class="nav-text">电磁干扰源分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一般分类"><span class="nav-number">6.2.</span> <span class="nav-text">一般分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#按电磁干扰属性来分，"><span class="nav-number">6.3.</span> <span class="nav-text">按电磁干扰属性来分，</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#按电磁干扰信号频谱宽度："><span class="nav-number">6.4.</span> <span class="nav-text">按电磁干扰信号频谱宽度：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从干扰信号的频率范围来分"><span class="nav-number">6.5.</span> <span class="nav-text">从干扰信号的频率范围来分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电磁干扰传播途径"><span class="nav-number">6.6.</span> <span class="nav-text">电磁干扰传播途径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#传导传输"><span class="nav-number">6.7.</span> <span class="nav-text">传导传输</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#辐射传输"><span class="nav-number">6.8.</span> <span class="nav-text">辐射传输</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#敏感设备"><span class="nav-number">6.9.</span> <span class="nav-text">敏感设备</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一般原则"><span class="nav-number">7.</span> <span class="nav-text">一般原则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EMC-仿真工具"><span class="nav-number">8.</span> <span class="nav-text">EMC 仿真工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Appendix"><span class="nav-number">9.</span> <span class="nav-text">Appendix</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3C-认证流程编辑"><span class="nav-number">9.1.</span> <span class="nav-text">3C 认证流程编辑</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶段1-申请受理"><span class="nav-number">9.2.</span> <span class="nav-text">阶段1 申请受理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶段2-资料审查"><span class="nav-number">9.3.</span> <span class="nav-text">阶段2 资料审查</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶段3-样品接收"><span class="nav-number">9.4.</span> <span class="nav-text">阶段3 样品接收</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶段4-样品检测"><span class="nav-number">9.5.</span> <span class="nav-text">阶段4 样品检测</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶段5-工厂审查"><span class="nav-number">9.6.</span> <span class="nav-text">阶段5 工厂审查</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶段6-合格评定"><span class="nav-number">9.7.</span> <span class="nav-text">阶段6 合格评定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶段7-证书领取"><span class="nav-number">9.8.</span> <span class="nav-text">阶段7 证书领取</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-number">10.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CPU-central-processing-unit"><span class="nav-number">1.</span> <span class="nav-text">CPU central processing unit</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#运算器"><span class="nav-number">1.0.1.</span> <span class="nav-text">运算器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#控制器"><span class="nav-number">1.0.2.</span> <span class="nav-text">控制器</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#MCU-微控制单元（-Micro-controller-Unit-）"><span class="nav-number">2.</span> <span class="nav-text">MCU 微控制单元（ Micro controller Unit ）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#MCU-主要厂商"><span class="nav-number">2.0.1.</span> <span class="nav-text">MCU 主要厂商</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SoC（System-on-Chip-）"><span class="nav-number">3.</span> <span class="nav-text">SoC（System on Chip ）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#IP核（Intellectual-Property-core）"><span class="nav-number">3.0.1.</span> <span class="nav-text">IP核（Intellectual Property core）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SIP-System-In-Package"><span class="nav-number">4.</span> <span class="nav-text">SIP System In Package</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-裸片-die"><span class="nav-number">4.0.1.</span> <span class="nav-text">1. 裸片 die</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-Package-封装。"><span class="nav-number">4.0.2.</span> <span class="nav-text">2. Package 封装。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#封装材料"><span class="nav-number">4.0.3.</span> <span class="nav-text">封装材料</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图片来源-《SiP系统级封装设计与仿真——Mentor-Expedition-Enterprise-Flow高级应用指南》"><span class="nav-number">4.0.4.</span> <span class="nav-text">图片来源 《SiP系统级封装设计与仿真——Mentor Expedition Enterprise Flow高级应用指南》</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见的-SIP-堆叠方式"><span class="nav-number">4.1.</span> <span class="nav-text">常见的 SIP 堆叠方式</span></a></li></div>
             
 
           </div>
